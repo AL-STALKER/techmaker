@@ -1,0 +1,23 @@
+16:33:06 **** Incremental Build of configuration Debug for project G8-L6 ****
+make all 
+Building file: ../Src/stm32f4xx_it.c
+Invoking: MCU GCC Compiler
+/home/n0ragam1/workspace/G8-L6/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed="__attribute__((__packed__))"' -DUSE_HAL_DRIVER -DSTM32F446xx -I"/home/n0ragam1/workspace/G8-L6/Inc" -I"/home/n0ragam1/workspace/G8-L6/Drivers/STM32F4xx_HAL_Driver/Inc" -I"/home/n0ragam1/workspace/G8-L6/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"/home/n0ragam1/workspace/G8-L6/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"/home/n0ragam1/workspace/G8-L6/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/stm32f4xx_it.d" -MT"Src/stm32f4xx_it.o" -o "Src/stm32f4xx_it.o" "../Src/stm32f4xx_it.c"
+Finished building: ../Src/stm32f4xx_it.c
+ 
+Building target: G8-L6.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F446RETx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "G8-L6.elf" @"objects.list"  
+Finished building target: G8-L6.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "G8-L6.elf" "G8-L6.bin"
+arm-none-eabi-size "G8-L6.elf"
+   text	   data	    bss	    dec	    hex	filename
+   8500	     20	   1692	  10212	   27e4	G8-L6.elf
+ 
+
+16:33:08 Build Finished (took 1s.429ms)
+

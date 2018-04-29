@@ -1,0 +1,27 @@
+12:52:00 **** Incremental Build of configuration Debug for project G8-L9 ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+/home/n0ragam1/workspace/G8-L9/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed="__attribute__((__packed__))"' -DUSE_HAL_DRIVER -DSTM32F446xx -I"/home/n0ragam1/workspace/G8-L9/Inc" -I"/home/n0ragam1/workspace/G8-L9/Drivers/Display" -I"/home/n0ragam1/workspace/G8-L9/Drivers/STM32F4xx_HAL_Driver/Inc" -I"/home/n0ragam1/workspace/G8-L9/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"/home/n0ragam1/workspace/G8-L9/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"/home/n0ragam1/workspace/G8-L9/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:79:10: warning: unused variable 'tx' [-Wunused-variable]
+  uint8_t tx[] = "Works!\r\n";
+          ^
+Finished building: ../Src/main.c
+ 
+Building target: G8-L9.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F446RETx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "G8-L9.elf" @"objects.list"  
+Finished building target: G8-L9.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "G8-L9.elf" "G8-L9.bin"
+arm-none-eabi-size "G8-L9.elf"
+   text	   data	    bss	    dec	    hex	filename
+  20504	    128	   2064	  22696	   58a8	G8-L9.elf
+ 
+
+12:52:01 Build Finished (took 1s.295ms)
+

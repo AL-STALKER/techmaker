@@ -1,0 +1,767 @@
+!SESSION 2018-03-17 12:01:07.689 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0_161
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Framework arguments:  -pluginCustomization configuration/st_pref.ini -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86 -pluginCustomization configuration/st_pref.ini -product org.eclipse.epp.package.cpp.product
+
+!ENTRY fr.ac6.mcu.ide 1 1 2018-03-17 12:02:04.466
+!MESSAGE Started RMI Server, listening on port 21112
+
+!ENTRY org.eclipse.jface 2 0 2018-03-17 12:04:34.220
+!MESSAGE The image could not be loaded: URLImageDescriptor(file:/home/n0ragam1/Ac6/SystemWorkbench/configuration/org.eclipse.osgi/496/0/.cp/themes/slate/graphics/icons/obj48/new_obj.gif)
+!STACK 0
+org.eclipse.jface.resource.DeviceResourceException: Unable to create resource URLImageDescriptor(file:/home/n0ragam1/Ac6/SystemWorkbench/configuration/org.eclipse.osgi/496/0/.cp/themes/slate/graphics/icons/obj48/new_obj.gif)
+	at org.eclipse.jface.resource.ImageDescriptor.createResource(ImageDescriptor.java:166)
+	at org.eclipse.jface.resource.DeviceResourceManager.allocate(DeviceResourceManager.java:52)
+	at org.eclipse.jface.resource.AbstractResourceManager.create(AbstractResourceManager.java:86)
+	at org.eclipse.jface.resource.ResourceManager.createImageWithDefault(ResourceManager.java:192)
+	at org.eclipse.jface.resource.ImageRegistry.get(ImageRegistry.java:214)
+	at org.eclipse.ui.internal.intro.impl.util.ImageUtil.getImage(ImageUtil.java:137)
+	at org.eclipse.ui.internal.intro.impl.swt.SharedStyleManager.getImage(SharedStyleManager.java:213)
+	at org.eclipse.ui.internal.intro.impl.swt.PageStyleManager.getImage(PageStyleManager.java:488)
+	at org.eclipse.ui.internal.intro.impl.swt.PageWidgetFactory.createImageHyperlink(PageWidgetFactory.java:246)
+	at org.eclipse.ui.internal.intro.impl.swt.PageWidgetFactory.createIntroElement(PageWidgetFactory.java:123)
+	at org.eclipse.ui.internal.intro.impl.swt.PageWidgetFactory.createIntroElement(PageWidgetFactory.java:119)
+	at org.eclipse.ui.internal.intro.impl.swt.PageWidgetFactory.createIntroElement(PageWidgetFactory.java:119)
+	at org.eclipse.ui.internal.intro.impl.swt.PageWidgetFactory.createIntroElement(PageWidgetFactory.java:119)
+	at org.eclipse.ui.internal.intro.impl.swt.PageContentForm.createPageChildren(PageContentForm.java:109)
+	at org.eclipse.ui.internal.intro.impl.swt.PageContentForm.createPartControl(PageContentForm.java:96)
+	at org.eclipse.ui.internal.intro.impl.swt.PageForm.showPage(PageForm.java:143)
+	at org.eclipse.ui.internal.intro.impl.presentations.FormIntroPartImplementation.showPage(FormIntroPartImplementation.java:327)
+	at org.eclipse.ui.internal.intro.impl.presentations.FormIntroPartImplementation.propertyChanged(FormIntroPartImplementation.java:242)
+	at org.eclipse.ui.internal.intro.impl.model.IntroModelRoot$1.run(IntroModelRoot.java:817)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.intro.impl.model.IntroModelRoot.firePropertyChange(IntroModelRoot.java:814)
+	at org.eclipse.ui.internal.intro.impl.model.IntroModelRoot.setCurrentPageId(IntroModelRoot.java:791)
+	at org.eclipse.ui.internal.intro.impl.model.IntroModelRoot.setCurrentPageId(IntroModelRoot.java:796)
+	at org.eclipse.ui.internal.intro.impl.model.url.IntroURL.showPage(IntroURL.java:449)
+	at org.eclipse.ui.internal.intro.impl.model.url.IntroURL.doExecute(IntroURL.java:202)
+	at org.eclipse.ui.internal.intro.impl.model.url.IntroURL$1.run(IntroURL.java:144)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.intro.impl.model.url.IntroURL.execute(IntroURL.java:141)
+	at org.eclipse.ui.internal.intro.impl.swt.RootPageForm$1.linkActivated(RootPageForm.java:128)
+	at org.eclipse.ui.forms.widgets.AbstractHyperlink.handleActivate(AbstractHyperlink.java:233)
+	at org.eclipse.ui.forms.widgets.ImageHyperlink.handleActivate(ImageHyperlink.java:201)
+	at org.eclipse.ui.forms.widgets.AbstractHyperlink.handleMouseUp(AbstractHyperlink.java:327)
+	at org.eclipse.ui.forms.widgets.AbstractHyperlink.access$2(AbstractHyperlink.java:311)
+	at org.eclipse.ui.forms.widgets.AbstractHyperlink$4.handleEvent(AbstractHyperlink.java:125)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4481)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1329)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3819)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3430)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:694)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:606)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+
+!ENTRY org.eclipse.jface 2 0 2018-03-17 12:04:34.272
+!MESSAGE The image could not be loaded: URLImageDescriptor(file:/home/n0ragam1/Ac6/SystemWorkbench/configuration/org.eclipse.osgi/496/0/.cp/themes/slate/graphics/icons/obj48/newhov_obj.gif)
+!STACK 0
+org.eclipse.jface.resource.DeviceResourceException: Unable to create resource URLImageDescriptor(file:/home/n0ragam1/Ac6/SystemWorkbench/configuration/org.eclipse.osgi/496/0/.cp/themes/slate/graphics/icons/obj48/newhov_obj.gif)
+	at org.eclipse.jface.resource.ImageDescriptor.createResource(ImageDescriptor.java:166)
+	at org.eclipse.jface.resource.DeviceResourceManager.allocate(DeviceResourceManager.java:52)
+	at org.eclipse.jface.resource.AbstractResourceManager.create(AbstractResourceManager.java:86)
+	at org.eclipse.jface.resource.ResourceManager.createImageWithDefault(ResourceManager.java:192)
+	at org.eclipse.jface.resource.ImageRegistry.get(ImageRegistry.java:214)
+	at org.eclipse.ui.internal.intro.impl.util.ImageUtil.getImage(ImageUtil.java:137)
+	at org.eclipse.ui.internal.intro.impl.swt.SharedStyleManager.getImage(SharedStyleManager.java:213)
+	at org.eclipse.ui.internal.intro.impl.swt.PageStyleManager.getImage(PageStyleManager.java:488)
+	at org.eclipse.ui.internal.intro.impl.swt.PageWidgetFactory.createImageHyperlink(PageWidgetFactory.java:261)
+	at org.eclipse.ui.internal.intro.impl.swt.PageWidgetFactory.createIntroElement(PageWidgetFactory.java:123)
+	at org.eclipse.ui.internal.intro.impl.swt.PageWidgetFactory.createIntroElement(PageWidgetFactory.java:119)
+	at org.eclipse.ui.internal.intro.impl.swt.PageWidgetFactory.createIntroElement(PageWidgetFactory.java:119)
+	at org.eclipse.ui.internal.intro.impl.swt.PageWidgetFactory.createIntroElement(PageWidgetFactory.java:119)
+	at org.eclipse.ui.internal.intro.impl.swt.PageContentForm.createPageChildren(PageContentForm.java:109)
+	at org.eclipse.ui.internal.intro.impl.swt.PageContentForm.createPartControl(PageContentForm.java:96)
+	at org.eclipse.ui.internal.intro.impl.swt.PageForm.showPage(PageForm.java:143)
+	at org.eclipse.ui.internal.intro.impl.presentations.FormIntroPartImplementation.showPage(FormIntroPartImplementation.java:327)
+	at org.eclipse.ui.internal.intro.impl.presentations.FormIntroPartImplementation.propertyChanged(FormIntroPartImplementation.java:242)
+	at org.eclipse.ui.internal.intro.impl.model.IntroModelRoot$1.run(IntroModelRoot.java:817)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.intro.impl.model.IntroModelRoot.firePropertyChange(IntroModelRoot.java:814)
+	at org.eclipse.ui.internal.intro.impl.model.IntroModelRoot.setCurrentPageId(IntroModelRoot.java:791)
+	at org.eclipse.ui.internal.intro.impl.model.IntroModelRoot.setCurrentPageId(IntroModelRoot.java:796)
+	at org.eclipse.ui.internal.intro.impl.model.url.IntroURL.showPage(IntroURL.java:449)
+	at org.eclipse.ui.internal.intro.impl.model.url.IntroURL.doExecute(IntroURL.java:202)
+	at org.eclipse.ui.internal.intro.impl.model.url.IntroURL$1.run(IntroURL.java:144)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.intro.impl.model.url.IntroURL.execute(IntroURL.java:141)
+	at org.eclipse.ui.internal.intro.impl.swt.RootPageForm$1.linkActivated(RootPageForm.java:128)
+	at org.eclipse.ui.forms.widgets.AbstractHyperlink.handleActivate(AbstractHyperlink.java:233)
+	at org.eclipse.ui.forms.widgets.ImageHyperlink.handleActivate(ImageHyperlink.java:201)
+	at org.eclipse.ui.forms.widgets.AbstractHyperlink.handleMouseUp(AbstractHyperlink.java:327)
+	at org.eclipse.ui.forms.widgets.AbstractHyperlink.access$2(AbstractHyperlink.java:311)
+	at org.eclipse.ui.forms.widgets.AbstractHyperlink$4.handleEvent(AbstractHyperlink.java:125)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4481)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1329)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3819)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3430)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:694)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:606)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+
+!ENTRY org.eclipse.equinox.p2.operations 2 0 2018-03-17 12:07:52.883
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 2 10001 2018-03-17 12:07:52.884
+!MESSAGE Your original request has been modified.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2018-03-17 12:07:52.884
+!MESSAGE "C/C++ Development Tools" will be ignored because a newer version is already installed. 
+
+!ENTRY org.eclipse.equinox.p2.operations 2 0 2018-03-17 12:07:52.894
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 2 10001 2018-03-17 12:07:52.894
+!MESSAGE Your original request has been modified.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2018-03-17 12:07:52.894
+!MESSAGE "C/C++ Development Tools" will be ignored because a newer version is already installed. 
+!SESSION 2018-03-17 12:14:07.505 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0_161
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Framework arguments:  -pluginCustomization configuration/st_pref.ini -product org.eclipse.epp.package.cpp.product -pluginCustomization configuration/st_pref.ini -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86 -pluginCustomization configuration/st_pref.ini -product org.eclipse.epp.package.cpp.product -data file:/home/n0ragam1/workspace/ -pluginCustomization configuration/st_pref.ini -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.jface 2 0 2018-03-17 12:14:33.742
+!MESSAGE The image could not be loaded: URLImageDescriptor(file:/home/n0ragam1/Ac6/SystemWorkbench/configuration/org.eclipse.osgi/496/0/.cp/themes/slate/graphics/icons/obj48/new_obj.gif)
+!STACK 0
+org.eclipse.jface.resource.DeviceResourceException: Unable to create resource URLImageDescriptor(file:/home/n0ragam1/Ac6/SystemWorkbench/configuration/org.eclipse.osgi/496/0/.cp/themes/slate/graphics/icons/obj48/new_obj.gif)
+	at org.eclipse.jface.resource.ImageDescriptor.createResource(ImageDescriptor.java:166)
+	at org.eclipse.jface.resource.DeviceResourceManager.allocate(DeviceResourceManager.java:52)
+	at org.eclipse.jface.resource.AbstractResourceManager.create(AbstractResourceManager.java:86)
+	at org.eclipse.jface.resource.ResourceManager.createImageWithDefault(ResourceManager.java:192)
+	at org.eclipse.jface.resource.ImageRegistry.get(ImageRegistry.java:214)
+	at org.eclipse.ui.internal.intro.impl.util.ImageUtil.getImage(ImageUtil.java:137)
+	at org.eclipse.ui.internal.intro.impl.swt.SharedStyleManager.getImage(SharedStyleManager.java:213)
+	at org.eclipse.ui.internal.intro.impl.swt.PageStyleManager.getImage(PageStyleManager.java:488)
+	at org.eclipse.ui.internal.intro.impl.swt.PageWidgetFactory.createImageHyperlink(PageWidgetFactory.java:246)
+	at org.eclipse.ui.internal.intro.impl.swt.PageWidgetFactory.createIntroElement(PageWidgetFactory.java:123)
+	at org.eclipse.ui.internal.intro.impl.swt.PageWidgetFactory.createIntroElement(PageWidgetFactory.java:119)
+	at org.eclipse.ui.internal.intro.impl.swt.PageWidgetFactory.createIntroElement(PageWidgetFactory.java:119)
+	at org.eclipse.ui.internal.intro.impl.swt.PageWidgetFactory.createIntroElement(PageWidgetFactory.java:119)
+	at org.eclipse.ui.internal.intro.impl.swt.PageContentForm.createPageChildren(PageContentForm.java:109)
+	at org.eclipse.ui.internal.intro.impl.swt.PageContentForm.createPartControl(PageContentForm.java:96)
+	at org.eclipse.ui.internal.intro.impl.swt.PageForm.showPage(PageForm.java:143)
+	at org.eclipse.ui.internal.intro.impl.presentations.FormIntroPartImplementation.createMainPageBook(FormIntroPartImplementation.java:203)
+	at org.eclipse.ui.internal.intro.impl.presentations.FormIntroPartImplementation.dynamicCreatePartControl(FormIntroPartImplementation.java:137)
+	at org.eclipse.ui.internal.intro.impl.presentations.FormIntroPartImplementation.createPartControl(FormIntroPartImplementation.java:99)
+	at org.eclipse.ui.internal.intro.impl.model.IntroPartPresentation.createPartControl(IntroPartPresentation.java:231)
+	at org.eclipse.ui.intro.config.CustomizableIntroPart.createPartControl(CustomizableIntroPart.java:203)
+	at org.eclipse.ui.internal.ViewIntroAdapterPart.createPartControl(ViewIntroAdapterPart.java:142)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.createPartControl(CompatibilityPart.java:151)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityView.createPartControl(CompatibilityView.java:143)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.create(CompatibilityPart.java:341)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:898)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:879)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.inject(InjectorImpl.java:121)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:345)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:264)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:162)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:104)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:73)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:55)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:129)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:971)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:640)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$1.run(PartRenderingEngine.java:525)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:509)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ElementReferenceRenderer.createWidget(ElementReferenceRenderer.java:69)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:971)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:640)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:746)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:717)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:711)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:695)
+	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer.showTab(StackRenderer.java:1306)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.postProcess(LazyStackRenderer.java:103)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:658)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:746)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:717)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:711)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:695)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:71)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:151)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:654)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:746)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:717)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:711)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:695)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:71)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer.processContents(WBWRenderer.java:614)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:654)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:746)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:717)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:711)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:695)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1061)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:694)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:606)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+
+!ENTRY org.eclipse.jface 2 0 2018-03-17 12:14:33.766
+!MESSAGE The image could not be loaded: URLImageDescriptor(file:/home/n0ragam1/Ac6/SystemWorkbench/configuration/org.eclipse.osgi/496/0/.cp/themes/slate/graphics/icons/obj48/newhov_obj.gif)
+!STACK 0
+org.eclipse.jface.resource.DeviceResourceException: Unable to create resource URLImageDescriptor(file:/home/n0ragam1/Ac6/SystemWorkbench/configuration/org.eclipse.osgi/496/0/.cp/themes/slate/graphics/icons/obj48/newhov_obj.gif)
+	at org.eclipse.jface.resource.ImageDescriptor.createResource(ImageDescriptor.java:166)
+	at org.eclipse.jface.resource.DeviceResourceManager.allocate(DeviceResourceManager.java:52)
+	at org.eclipse.jface.resource.AbstractResourceManager.create(AbstractResourceManager.java:86)
+	at org.eclipse.jface.resource.ResourceManager.createImageWithDefault(ResourceManager.java:192)
+	at org.eclipse.jface.resource.ImageRegistry.get(ImageRegistry.java:214)
+	at org.eclipse.ui.internal.intro.impl.util.ImageUtil.getImage(ImageUtil.java:137)
+	at org.eclipse.ui.internal.intro.impl.swt.SharedStyleManager.getImage(SharedStyleManager.java:213)
+	at org.eclipse.ui.internal.intro.impl.swt.PageStyleManager.getImage(PageStyleManager.java:488)
+	at org.eclipse.ui.internal.intro.impl.swt.PageWidgetFactory.createImageHyperlink(PageWidgetFactory.java:261)
+	at org.eclipse.ui.internal.intro.impl.swt.PageWidgetFactory.createIntroElement(PageWidgetFactory.java:123)
+	at org.eclipse.ui.internal.intro.impl.swt.PageWidgetFactory.createIntroElement(PageWidgetFactory.java:119)
+	at org.eclipse.ui.internal.intro.impl.swt.PageWidgetFactory.createIntroElement(PageWidgetFactory.java:119)
+	at org.eclipse.ui.internal.intro.impl.swt.PageWidgetFactory.createIntroElement(PageWidgetFactory.java:119)
+	at org.eclipse.ui.internal.intro.impl.swt.PageContentForm.createPageChildren(PageContentForm.java:109)
+	at org.eclipse.ui.internal.intro.impl.swt.PageContentForm.createPartControl(PageContentForm.java:96)
+	at org.eclipse.ui.internal.intro.impl.swt.PageForm.showPage(PageForm.java:143)
+	at org.eclipse.ui.internal.intro.impl.presentations.FormIntroPartImplementation.createMainPageBook(FormIntroPartImplementation.java:203)
+	at org.eclipse.ui.internal.intro.impl.presentations.FormIntroPartImplementation.dynamicCreatePartControl(FormIntroPartImplementation.java:137)
+	at org.eclipse.ui.internal.intro.impl.presentations.FormIntroPartImplementation.createPartControl(FormIntroPartImplementation.java:99)
+	at org.eclipse.ui.internal.intro.impl.model.IntroPartPresentation.createPartControl(IntroPartPresentation.java:231)
+	at org.eclipse.ui.intro.config.CustomizableIntroPart.createPartControl(CustomizableIntroPart.java:203)
+	at org.eclipse.ui.internal.ViewIntroAdapterPart.createPartControl(ViewIntroAdapterPart.java:142)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.createPartControl(CompatibilityPart.java:151)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityView.createPartControl(CompatibilityView.java:143)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.create(CompatibilityPart.java:341)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:898)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:879)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.inject(InjectorImpl.java:121)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:345)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:264)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:162)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:104)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:73)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:55)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:129)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:971)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:640)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$1.run(PartRenderingEngine.java:525)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:509)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ElementReferenceRenderer.createWidget(ElementReferenceRenderer.java:69)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:971)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:640)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:746)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:717)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:711)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:695)
+	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer.showTab(StackRenderer.java:1306)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.postProcess(LazyStackRenderer.java:103)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:658)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:746)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:717)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:711)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:695)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:71)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:151)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:654)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:746)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:717)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:711)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:695)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:71)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer.processContents(WBWRenderer.java:614)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:654)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:746)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:717)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:711)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:695)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1061)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:694)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:606)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+
+!ENTRY fr.ac6.mcu.ide 1 1 2018-03-17 12:14:39.352
+!MESSAGE Started RMI Server, listening on port 21113
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-03-17 12:25:10.429
+!MESSAGE Indexed 'LedBlink' (1 sources, 32 headers) in 3.18 sec: 1,032 declarations; 1,838 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-03-17 12:30:08.577
+!MESSAGE Launch attempt in non existent working directory "/home/n0ragam1/workspace/LedBlink/Debug"
+!STACK 0
+java.lang.Exception
+	at org.eclipse.cdt.core.CCorePlugin.logStackTrace(CCorePlugin.java:1394)
+	at org.eclipse.cdt.core.CommandLauncher.execute(CommandLauncher.java:189)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:263)
+	at org.eclipse.cdt.managedbuilder.core.ExternalBuildRunner.invokeExternalBuild(ExternalBuildRunner.java:128)
+	at org.eclipse.cdt.managedbuilder.core.ExternalBuildRunner.invokeBuild(ExternalBuildRunner.java:72)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performExternalClean(CommonBuilder.java:1149)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.clean(CommonBuilder.java:1088)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.clean(CommonBuilder.java:1046)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:736)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:205)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:245)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:359)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:382)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:486)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:405)
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:287)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SESSION 2018-03-17 12:39:35.618 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0_161
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Framework arguments:  -pluginCustomization configuration/st_pref.ini -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86 -pluginCustomization configuration/st_pref.ini -product org.eclipse.epp.package.cpp.product
+
+!ENTRY fr.ac6.mcu.ide 1 1 2018-03-17 12:40:02.086
+!MESSAGE Started RMI Server, listening on port 21112
+
+!ENTRY org.eclipse.core.resources 4 567 2018-03-17 12:40:14.573
+!MESSAGE The project description file (.project) for 'LedBlink' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+
+!ENTRY org.eclipse.core.resources 4 77 2018-03-17 12:42:08.727
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2018-03-17 12:42:08.727
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2018-03-17 12:42:08.728
+!MESSAGE /home/n0ragam1/workspace/helloled overlaps the location of another project: 'helloled'
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-03-17 12:43:54.148
+!MESSAGE Indexed 'blink' (1 sources, 32 headers) in 2.53 sec: 1,032 declarations; 1,838 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-03-17 12:55:36.917
+!MESSAGE Indexed 'blink' (20 sources, 84 headers) in 3.69 sec: 7,436 declarations; 16,323 references; 0 unresolved inclusions; 141 syntax errors; 1,525 unresolved names (6%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-03-17 12:57:11.697
+!MESSAGE Indexed 'blink' (20 sources, 84 headers) in 4.43 sec: 7,436 declarations; 16,323 references; 0 unresolved inclusions; 141 syntax errors; 1,525 unresolved names (6%)
+!SESSION 2018-03-17 13:54:23.334 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0_161
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Framework arguments:  -pluginCustomization configuration/st_pref.ini -product org.eclipse.epp.package.cpp.product /home/n0ragam1/workspace/blinkled/.cproject
+Command-line arguments:  -os linux -ws gtk -arch x86 -pluginCustomization configuration/st_pref.ini -product org.eclipse.epp.package.cpp.product /home/n0ragam1/workspace/blinkled/.cproject
+
+!ENTRY fr.ac6.mcu.ide 1 1 2018-03-17 13:54:59.443
+!MESSAGE Started RMI Server, listening on port 21112
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-03-17 13:55:37.004
+!MESSAGE Indexed 'blinkled' (21 sources, 71 headers) in 29.1 sec: 6,651 declarations; 22,961 references; 3 unresolved inclusions; 154 syntax errors; 2,999 unresolved names (9.2%)
+!SESSION 2018-03-21 20:39:03.271 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0_161
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Framework arguments:  -pluginCustomization configuration/st_pref.ini -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86 -pluginCustomization configuration/st_pref.ini -product org.eclipse.epp.package.cpp.product
+
+!ENTRY fr.ac6.mcu.ide 1 1 2018-03-21 20:39:45.118
+!MESSAGE Started RMI Server, listening on port 21112
+!SESSION 2018-03-25 12:16:22.077 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0_161
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Framework arguments:  -pluginCustomization configuration/st_pref.ini -product org.eclipse.epp.package.cpp.product /home/n0ragam1/workspace/G8-HW2/.cproject
+Command-line arguments:  -os linux -ws gtk -arch x86 -pluginCustomization configuration/st_pref.ini -product org.eclipse.epp.package.cpp.product /home/n0ragam1/workspace/G8-HW2/.cproject
+
+!ENTRY fr.ac6.mcu.ide 1 1 2018-03-25 12:16:57.407
+!MESSAGE Started RMI Server, listening on port 21112
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-03-25 12:17:23.361
+!MESSAGE Indexed 'G8-HW2' (21 sources, 71 headers) in 24.6 sec: 6,651 declarations; 22,995 references; 3 unresolved inclusions; 154 syntax errors; 3,007 unresolved names (9.2%)
+!SESSION 2018-03-31 11:15:03.038 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0_161
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Framework arguments:  -pluginCustomization configuration/st_pref.ini -product org.eclipse.epp.package.cpp.product /home/n0ragam1/workspace/G8-HW4/.cproject
+Command-line arguments:  -os linux -ws gtk -arch x86 -pluginCustomization configuration/st_pref.ini -product org.eclipse.epp.package.cpp.product /home/n0ragam1/workspace/G8-HW4/.cproject
+
+!ENTRY fr.ac6.mcu.ide 1 1 2018-03-31 11:15:37.570
+!MESSAGE Started RMI Server, listening on port 21112
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-03-31 11:16:03.928
+!MESSAGE Indexed 'G8-HW4' (24 sources, 74 headers) in 24.8 sec: 6,937 declarations; 26,295 references; 3 unresolved inclusions; 161 syntax errors; 3,219 unresolved names (8.8%)
+
+!ENTRY org.eclipse.osgi 2 0 2018-03-31 11:21:29.052
+!MESSAGE While loading class "org.eclipse.wst.sse.core.internal.preferences.PreferenceInitializer", thread "Thread[Worker-17,5,main]" timed out waiting (5022ms) for thread "Thread[Worker-24,5,main]" to finish starting bundle "org.eclipse.wst.sse.core_1.1.901.v201510130005 [517]". To avoid deadlock, thread "Thread[Worker-17,5,main]" is proceeding but "org.eclipse.wst.sse.core.internal.preferences.PreferenceInitializer" may not be fully initialized.
+!STACK 0
+org.osgi.framework.BundleException: Unable to acquire the state change lock for the module: osgi.identity; osgi.identity="org.eclipse.wst.sse.core"; type="osgi.bundle"; version:Version="1.1.901.v201510130005"; singleton:="true" [id=517] STARTED [STARTED]
+	at org.eclipse.osgi.container.Module.lockStateChange(Module.java:329)
+	at org.eclipse.osgi.container.Module.start(Module.java:389)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:454)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:531)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:324)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:327)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:402)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:352)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:344)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:573)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:174)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.core.internal.preferences.PreferenceServiceRegistryHelper.runInitializer(PreferenceServiceRegistryHelper.java:293)
+	at org.eclipse.core.internal.preferences.PreferenceServiceRegistryHelper.applyRuntimeDefaults(PreferenceServiceRegistryHelper.java:131)
+	at org.eclipse.core.internal.preferences.PreferencesService.applyRuntimeDefaults(PreferencesService.java:368)
+	at org.eclipse.core.internal.preferences.DefaultPreferences.applyRuntimeDefaults(DefaultPreferences.java:221)
+	at org.eclipse.core.internal.preferences.DefaultPreferences.load(DefaultPreferences.java:274)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.create(EclipsePreferences.java:409)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalNode(EclipsePreferences.java:670)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.node(EclipsePreferences.java:812)
+	at org.eclipse.core.internal.preferences.AbstractScope.getNode(AbstractScope.java:38)
+	at org.eclipse.core.runtime.preferences.DefaultScope.getNode(DefaultScope.java:76)
+	at org.eclipse.core.internal.preferences.PreferencesService$5.run(PreferencesService.java:613)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.preferences.PreferencesService.getNodes(PreferencesService.java:607)
+	at org.eclipse.core.internal.preferences.PreferencesService.getBoolean(PreferencesService.java:477)
+	at org.eclipse.wst.sse.core.internal.tasks.TaskScanningJob.isEnabledOnProject(TaskScanningJob.java:146)
+	at org.eclipse.wst.sse.core.internal.tasks.TaskScanningJob.addProjectDelta(TaskScanningJob.java:82)
+	at org.eclipse.wst.sse.core.internal.tasks.TaskScanningScheduler$ListenerVisitor.visit(TaskScanningScheduler.java:54)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:63)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:74)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:47)
+	at org.eclipse.wst.sse.core.internal.tasks.TaskScanningScheduler$ListenerVisitor.resourceChanged(TaskScanningScheduler.java:36)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:373)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1470)
+	at org.eclipse.core.internal.resources.File.setContents(File.java:336)
+	at org.eclipse.cdt.internal.core.XmlUtil.serializeXml(XmlUtil.java:390)
+	at org.eclipse.cdt.internal.core.language.settings.providers.LanguageSettingsProvidersSerializer.serializeLanguageSettings(LanguageSettingsProvidersSerializer.java:881)
+	at org.eclipse.cdt.internal.core.language.settings.providers.LanguageSettingsProvidersSerializer$2.run(LanguageSettingsProvidersSerializer.java:925)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY fr.ac6.mcu.externaltools 4 0 2018-03-31 13:33:56.284
+!MESSAGE getFlasherLocation() usage is deprecated
+!SESSION 2018-04-07 12:07:28.024 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0_161
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Framework arguments:  -pluginCustomization configuration/st_pref.ini -product org.eclipse.epp.package.cpp.product /home/n0ragam1/workspace/G8-Display/.cproject
+Command-line arguments:  -os linux -ws gtk -arch x86 -pluginCustomization configuration/st_pref.ini -product org.eclipse.epp.package.cpp.product /home/n0ragam1/workspace/G8-Display/.cproject
+
+!ENTRY fr.ac6.mcu.ide 1 1 2018-04-07 12:08:07.036
+!MESSAGE Started RMI Server, listening on port 21112
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-04-07 12:08:35.623
+!MESSAGE Indexed 'G8-Display' (25 sources, 75 headers) in 27.2 sec: 7,431 declarations; 34,802 references; 3 unresolved inclusions; 183 syntax errors; 3,898 unresolved names (8.4%)
+!SESSION 2018-04-08 09:47:02.519 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0_161
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Framework arguments:  -pluginCustomization configuration/st_pref.ini -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86 -pluginCustomization configuration/st_pref.ini -product org.eclipse.epp.package.cpp.product
+
+!ENTRY fr.ac6.mcu.ide 1 1 2018-04-08 09:47:34.633
+!MESSAGE Started RMI Server, listening on port 21112
+!SESSION 2018-04-14 12:47:55.234 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0_161
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Framework arguments:  -pluginCustomization configuration/st_pref.ini -product org.eclipse.epp.package.cpp.product /home/n0ragam1/workspace/G8-L6/.cproject
+Command-line arguments:  -os linux -ws gtk -arch x86 -pluginCustomization configuration/st_pref.ini -product org.eclipse.epp.package.cpp.product /home/n0ragam1/workspace/G8-L6/.cproject
+
+!ENTRY fr.ac6.mcu.ide 1 1 2018-04-14 12:48:42.623
+!MESSAGE Started RMI Server, listening on port 21112
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-04-14 12:49:20.723
+!MESSAGE Indexed 'G8-L6' (25 sources, 75 headers) in 35.1 sec: 7,434 declarations; 34,874 references; 3 unresolved inclusions; 183 syntax errors; 3,898 unresolved names (8.4%)
+!SESSION 2018-04-21 15:06:55.161 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0_161
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Framework arguments:  -pluginCustomization configuration/st_pref.ini -product org.eclipse.epp.package.cpp.product /home/n0ragam1/workspace/G8-L9/.cproject
+Command-line arguments:  -os linux -ws gtk -arch x86 -pluginCustomization configuration/st_pref.ini -product org.eclipse.epp.package.cpp.product /home/n0ragam1/workspace/G8-L9/.cproject
+
+!ENTRY fr.ac6.mcu.ide 1 1 2018-04-21 15:07:41.524
+!MESSAGE Started RMI Server, listening on port 21112
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-04-21 15:08:15.797
+!MESSAGE Indexed 'G8-L9' (24 sources, 74 headers) in 32.1 sec: 6,937 declarations; 26,293 references; 3 unresolved inclusions; 161 syntax errors; 3,219 unresolved names (8.8%)
+!SESSION 2018-04-21 15:17:18.997 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0_161
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Framework arguments:  -pluginCustomization configuration/st_pref.ini -product org.eclipse.epp.package.cpp.product -pluginCustomization configuration/st_pref.ini -product org.eclipse.epp.package.cpp.product /home/n0ragam1/workspace/G8-L9/.cproject
+Command-line arguments:  -os linux -ws gtk -arch x86 -pluginCustomization configuration/st_pref.ini -product org.eclipse.epp.package.cpp.product -data file:/home/n0ragam1/workspace/ -pluginCustomization configuration/st_pref.ini -product org.eclipse.epp.package.cpp.product /home/n0ragam1/workspace/G8-L9/.cproject
+
+!ENTRY org.eclipse.jface 2 0 2018-04-21 15:17:38.517
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2018-04-21 15:17:38.517
+!MESSAGE A conflict occurred for ALT+CTRL+T:
+Binding(ALT+CTRL+T,
+	ParameterizedCommand(Command(org.eclipse.team.svn.ui.command.EditPropertiesCommand,Show Properties,
+		,
+		Category(org.eclipse.team.svn.ui.command.category,SVN,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@f373d4,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+CTRL+T,
+	ParameterizedCommand(Command(org.eclipse.tm.terminal.connector.local.command.launch,Open Local Terminal on Selection,
+		,
+		Category(org.eclipse.tm.terminal.view.ui.commands.category,Terminal Commands,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@53bd49,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY fr.ac6.mcu.ide 1 1 2018-04-21 15:17:56.576
+!MESSAGE Started RMI Server, listening on port 21113
+!SESSION 2018-04-21 15:19:37.049 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0_161
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Framework arguments:  -pluginCustomization configuration/st_pref.ini -product org.eclipse.epp.package.cpp.product -pluginCustomization configuration/st_pref.ini -product org.eclipse.epp.package.cpp.product -pluginCustomization configuration/st_pref.ini -product org.eclipse.epp.package.cpp.product /home/n0ragam1/workspace/G8-L9/.cproject
+Command-line arguments:  -os linux -ws gtk -arch x86 -pluginCustomization configuration/st_pref.ini -product org.eclipse.epp.package.cpp.product -pluginCustomization configuration/st_pref.ini -product org.eclipse.epp.package.cpp.product -data file:/home/n0ragam1/workspace/ -pluginCustomization configuration/st_pref.ini -product org.eclipse.epp.package.cpp.product /home/n0ragam1/workspace/G8-L9/.cproject
+
+!ENTRY org.eclipse.equinox.registry 2 0 2018-04-21 15:19:40.978
+!MESSAGE The extensions and extension-points from the bundle "gnu.io.rxtx.source" are ignored. The bundle is not marked as singleton. 
+
+!ENTRY org.eclipse.jface 2 0 2018-04-21 15:19:49.409
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2018-04-21 15:19:49.409
+!MESSAGE A conflict occurred for ALT+CTRL+T:
+Binding(ALT+CTRL+T,
+	ParameterizedCommand(Command(org.eclipse.team.svn.ui.command.EditPropertiesCommand,Show Properties,
+		,
+		Category(org.eclipse.team.svn.ui.command.category,SVN,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@17ba0af,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+CTRL+T,
+	ParameterizedCommand(Command(org.eclipse.tm.terminal.connector.local.command.launch,Open Local Terminal on Selection,
+		,
+		Category(org.eclipse.tm.terminal.view.ui.commands.category,Terminal Commands,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@123c1f6,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY fr.ac6.mcu.ide 1 1 2018-04-21 15:20:00.625
+!MESSAGE Started RMI Server, listening on port 21114
+
+!ENTRY org.eclipse.tm.terminal.control 4 0 2018-04-21 15:29:00.402
+!MESSAGE Underlying input stream returned zero bytes
+!STACK 0
+java.io.IOException: Underlying input stream returned zero bytes
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:288)
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:326)
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
+	at sun.nio.cs.StreamDecoder.read0(StreamDecoder.java:127)
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:112)
+	at java.io.InputStreamReader.read(InputStreamReader.java:168)
+	at org.eclipse.tm.internal.terminal.emulator.VT100Emulator.getNextChar(VT100Emulator.java:1351)
+	at org.eclipse.tm.internal.terminal.emulator.VT100Emulator.processNewText(VT100Emulator.java:288)
+	at org.eclipse.tm.internal.terminal.emulator.VT100Emulator.processText(VT100Emulator.java:267)
+	at org.eclipse.tm.internal.terminal.emulator.VT100TerminalControl$3.run(VT100TerminalControl.java:498)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY fr.ac6.mcu.externaltools 4 0 2018-04-21 16:07:46.010
+!MESSAGE getFlasherLocation() usage is deprecated
+!SESSION 2018-04-22 10:28:05.659 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0_161
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Framework arguments:  -pluginCustomization configuration/st_pref.ini -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86 -pluginCustomization configuration/st_pref.ini -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.jface 2 0 2018-04-22 10:28:21.634
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2018-04-22 10:28:21.634
+!MESSAGE A conflict occurred for ALT+CTRL+T:
+Binding(ALT+CTRL+T,
+	ParameterizedCommand(Command(org.eclipse.team.svn.ui.command.EditPropertiesCommand,Show Properties,
+		,
+		Category(org.eclipse.team.svn.ui.command.category,SVN,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@152bd0f,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+CTRL+T,
+	ParameterizedCommand(Command(org.eclipse.tm.terminal.connector.local.command.launch,Open Local Terminal on Selection,
+		,
+		Category(org.eclipse.tm.terminal.view.ui.commands.category,Terminal Commands,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@d905c1,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY fr.ac6.mcu.ide 1 1 2018-04-22 10:28:39.843
+!MESSAGE Started RMI Server, listening on port 21112
+
+!ENTRY fr.ac6.mcu.externaltools 4 0 2018-04-22 10:55:27.844
+!MESSAGE getFlasherLocation() usage is deprecated
+!SESSION 2018-04-28 20:46:09.338 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0_161
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Framework arguments:  -pluginCustomization configuration/st_pref.ini -product org.eclipse.epp.package.cpp.product /home/n0ragam1/workspace/G8-L20/.cproject
+Command-line arguments:  -os linux -ws gtk -arch x86 -pluginCustomization configuration/st_pref.ini -product org.eclipse.epp.package.cpp.product /home/n0ragam1/workspace/G8-L20/.cproject
+
+!ENTRY org.eclipse.jface 2 0 2018-04-28 20:46:40.130
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2018-04-28 20:46:40.131
+!MESSAGE A conflict occurred for ALT+CTRL+T:
+Binding(ALT+CTRL+T,
+	ParameterizedCommand(Command(org.eclipse.team.svn.ui.command.EditPropertiesCommand,Show Properties,
+		,
+		Category(org.eclipse.team.svn.ui.command.category,SVN,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1f5cae3,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+CTRL+T,
+	ParameterizedCommand(Command(org.eclipse.tm.terminal.connector.local.command.launch,Open Local Terminal on Selection,
+		,
+		Category(org.eclipse.tm.terminal.view.ui.commands.category,Terminal Commands,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@30dd28,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY fr.ac6.mcu.ide 1 1 2018-04-28 20:47:19.488
+!MESSAGE Started RMI Server, listening on port 21112
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-04-28 20:47:57.172
+!MESSAGE Indexed 'G8-L20' (24 sources, 74 headers) in 35.9 sec: 7,329 declarations; 30,461 references; 3 unresolved inclusions; 166 syntax errors; 3,596 unresolved names (8.7%)
+!SESSION 2018-04-29 12:02:29.490 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0_161
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Framework arguments:  -pluginCustomization configuration/st_pref.ini -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86 -pluginCustomization configuration/st_pref.ini -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.jface 2 0 2018-04-29 12:02:53.420
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2018-04-29 12:02:53.420
+!MESSAGE A conflict occurred for ALT+CTRL+T:
+Binding(ALT+CTRL+T,
+	ParameterizedCommand(Command(org.eclipse.team.svn.ui.command.EditPropertiesCommand,Show Properties,
+		,
+		Category(org.eclipse.team.svn.ui.command.category,SVN,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1ea5ee0,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+CTRL+T,
+	ParameterizedCommand(Command(org.eclipse.tm.terminal.connector.local.command.launch,Open Local Terminal on Selection,
+		,
+		Category(org.eclipse.tm.terminal.view.ui.commands.category,Terminal Commands,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1f5cae3,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY fr.ac6.mcu.ide 1 1 2018-04-29 12:03:19.128
+!MESSAGE Started RMI Server, listening on port 21112

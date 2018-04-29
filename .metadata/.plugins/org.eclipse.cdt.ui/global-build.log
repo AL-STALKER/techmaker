@@ -1,0 +1,1225 @@
+13:21:50 **** Build of configuration Debug for project G8-Display ****
+make all 
+Building file: ../Src/adc.c
+Invoking: MCU GCC Compiler
+/home/n0ragam1/workspace/G8-Display/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed="__attribute__((__packed__))"' -DUSE_HAL_DRIVER -DSTM32F446xx -I"/home/n0ragam1/workspace/G8-Display/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/Display" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/adc.d" -MT"Src/adc.o" -o "Src/adc.o" "../Src/adc.c"
+Finished building: ../Src/adc.c
+ 
+Building file: ../Src/gpio.c
+Invoking: MCU GCC Compiler
+/home/n0ragam1/workspace/G8-Display/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed="__attribute__((__packed__))"' -DUSE_HAL_DRIVER -DSTM32F446xx -I"/home/n0ragam1/workspace/G8-Display/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/Display" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/gpio.d" -MT"Src/gpio.o" -o "Src/gpio.o" "../Src/gpio.c"
+Finished building: ../Src/gpio.c
+ 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+/home/n0ragam1/workspace/G8-Display/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed="__attribute__((__packed__))"' -DUSE_HAL_DRIVER -DSTM32F446xx -I"/home/n0ragam1/workspace/G8-Display/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/Display" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:168:15: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness [-Wpointer-sign]
+    if (strcmp(left, (char*)command) == 0 )
+               ^
+In file included from /home/n0ragam1/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux32_1.13.1.201703061523/tools/compiler/arm-none-eabi/include/stdio.h:29:0,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:48,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:45,
+                 from /home/n0ragam1/workspace/G8-Display/Inc/stm32f4xx_hal_conf.h:244,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:46,
+                 from ../Src/main.c:41:
+/home/n0ragam1/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux32_1.13.1.201703061523/tools/compiler/arm-none-eabi/include/string.h:32:6: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+../Src/main.c:170:15: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness [-Wpointer-sign]
+    if (strcmp(right, (char*)command) == 0 )
+               ^
+In file included from /home/n0ragam1/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux32_1.13.1.201703061523/tools/compiler/arm-none-eabi/include/stdio.h:29:0,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:48,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:45,
+                 from /home/n0ragam1/workspace/G8-Display/Inc/stm32f4xx_hal_conf.h:244,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:46,
+                 from ../Src/main.c:41:
+/home/n0ragam1/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux32_1.13.1.201703061523/tools/compiler/arm-none-eabi/include/string.h:32:6: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+../Src/main.c:130:11: warning: unused variable 'counterRST' [-Wunused-variable]
+   uint8_t counterRST = 0;
+           ^
+../Src/main.c:128:11: warning: unused variable 'restart' [-Wunused-variable]
+   uint8_t restart[5] = {0};
+           ^
+../Src/main.c: In function 'IsExit':
+../Src/main.c:258:11: warning: unused variable 'height' [-Wunused-variable]
+  uint16_t height = 10;
+           ^
+../Src/main.c: In function 'MoveRectClick':
+../Src/main.c:351:17: warning: variable 'btn4' set but not used [-Wunused-but-set-variable]
+   GPIO_PinState btn4 = GPIO_PIN_RESET;
+                 ^
+Finished building: ../Src/main.c
+ 
+Building file: ../Src/stm32f4xx_hal_msp.c
+Invoking: MCU GCC Compiler
+/home/n0ragam1/workspace/G8-Display/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed="__attribute__((__packed__))"' -DUSE_HAL_DRIVER -DSTM32F446xx -I"/home/n0ragam1/workspace/G8-Display/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/Display" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/stm32f4xx_hal_msp.d" -MT"Src/stm32f4xx_hal_msp.o" -o "Src/stm32f4xx_hal_msp.o" "../Src/stm32f4xx_hal_msp.c"
+Finished building: ../Src/stm32f4xx_hal_msp.c
+ 
+Building file: ../Src/stm32f4xx_it.c
+Invoking: MCU GCC Compiler
+/home/n0ragam1/workspace/G8-Display/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed="__attribute__((__packed__))"' -DUSE_HAL_DRIVER -DSTM32F446xx -I"/home/n0ragam1/workspace/G8-Display/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/Display" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/stm32f4xx_it.d" -MT"Src/stm32f4xx_it.o" -o "Src/stm32f4xx_it.o" "../Src/stm32f4xx_it.c"
+Finished building: ../Src/stm32f4xx_it.c
+ 
+Building file: ../Src/system_stm32f4xx.c
+Invoking: MCU GCC Compiler
+/home/n0ragam1/workspace/G8-Display/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed="__attribute__((__packed__))"' -DUSE_HAL_DRIVER -DSTM32F446xx -I"/home/n0ragam1/workspace/G8-Display/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/Display" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/system_stm32f4xx.d" -MT"Src/system_stm32f4xx.o" -o "Src/system_stm32f4xx.o" "../Src/system_stm32f4xx.c"
+Finished building: ../Src/system_stm32f4xx.c
+ 
+Building file: ../Src/tim.c
+Invoking: MCU GCC Compiler
+/home/n0ragam1/workspace/G8-Display/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed="__attribute__((__packed__))"' -DUSE_HAL_DRIVER -DSTM32F446xx -I"/home/n0ragam1/workspace/G8-Display/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/Display" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/tim.d" -MT"Src/tim.o" -o "Src/tim.o" "../Src/tim.c"
+Finished building: ../Src/tim.c
+ 
+Building file: ../Src/usart.c
+Invoking: MCU GCC Compiler
+/home/n0ragam1/workspace/G8-Display/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed="__attribute__((__packed__))"' -DUSE_HAL_DRIVER -DSTM32F446xx -I"/home/n0ragam1/workspace/G8-Display/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/Display" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/usart.d" -MT"Src/usart.o" -o "Src/usart.o" "../Src/usart.c"
+Finished building: ../Src/usart.c
+ 
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c
+Invoking: MCU GCC Compiler
+/home/n0ragam1/workspace/G8-Display/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed="__attribute__((__packed__))"' -DUSE_HAL_DRIVER -DSTM32F446xx -I"/home/n0ragam1/workspace/G8-Display/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/Display" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c"
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c
+ 
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c
+Invoking: MCU GCC Compiler
+/home/n0ragam1/workspace/G8-Display/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed="__attribute__((__packed__))"' -DUSE_HAL_DRIVER -DSTM32F446xx -I"/home/n0ragam1/workspace/G8-Display/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/Display" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c"
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c
+ 
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c
+Invoking: MCU GCC Compiler
+/home/n0ragam1/workspace/G8-Display/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed="__attribute__((__packed__))"' -DUSE_HAL_DRIVER -DSTM32F446xx -I"/home/n0ragam1/workspace/G8-Display/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/Display" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c"
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c
+ 
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c
+Invoking: MCU GCC Compiler
+/home/n0ragam1/workspace/G8-Display/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed="__attribute__((__packed__))"' -DUSE_HAL_DRIVER -DSTM32F446xx -I"/home/n0ragam1/workspace/G8-Display/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/Display" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c"
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c
+ 
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c
+Invoking: MCU GCC Compiler
+/home/n0ragam1/workspace/G8-Display/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed="__attribute__((__packed__))"' -DUSE_HAL_DRIVER -DSTM32F446xx -I"/home/n0ragam1/workspace/G8-Display/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/Display" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c"
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c
+ 
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c
+Invoking: MCU GCC Compiler
+/home/n0ragam1/workspace/G8-Display/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed="__attribute__((__packed__))"' -DUSE_HAL_DRIVER -DSTM32F446xx -I"/home/n0ragam1/workspace/G8-Display/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/Display" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c"
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c
+ 
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c
+Invoking: MCU GCC Compiler
+/home/n0ragam1/workspace/G8-Display/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed="__attribute__((__packed__))"' -DUSE_HAL_DRIVER -DSTM32F446xx -I"/home/n0ragam1/workspace/G8-Display/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/Display" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c"
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c
+ 
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c
+Invoking: MCU GCC Compiler
+/home/n0ragam1/workspace/G8-Display/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed="__attribute__((__packed__))"' -DUSE_HAL_DRIVER -DSTM32F446xx -I"/home/n0ragam1/workspace/G8-Display/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/Display" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c"
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c
+ 
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c
+Invoking: MCU GCC Compiler
+/home/n0ragam1/workspace/G8-Display/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed="__attribute__((__packed__))"' -DUSE_HAL_DRIVER -DSTM32F446xx -I"/home/n0ragam1/workspace/G8-Display/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/Display" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c"
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c
+ 
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c
+Invoking: MCU GCC Compiler
+/home/n0ragam1/workspace/G8-Display/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed="__attribute__((__packed__))"' -DUSE_HAL_DRIVER -DSTM32F446xx -I"/home/n0ragam1/workspace/G8-Display/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/Display" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c"
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c
+ 
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c
+Invoking: MCU GCC Compiler
+/home/n0ragam1/workspace/G8-Display/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed="__attribute__((__packed__))"' -DUSE_HAL_DRIVER -DSTM32F446xx -I"/home/n0ragam1/workspace/G8-Display/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/Display" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c"
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c
+ 
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c
+Invoking: MCU GCC Compiler
+/home/n0ragam1/workspace/G8-Display/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed="__attribute__((__packed__))"' -DUSE_HAL_DRIVER -DSTM32F446xx -I"/home/n0ragam1/workspace/G8-Display/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/Display" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c"
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c
+ 
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c
+Invoking: MCU GCC Compiler
+/home/n0ragam1/workspace/G8-Display/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed="__attribute__((__packed__))"' -DUSE_HAL_DRIVER -DSTM32F446xx -I"/home/n0ragam1/workspace/G8-Display/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/Display" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c"
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c
+ 
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c
+Invoking: MCU GCC Compiler
+/home/n0ragam1/workspace/G8-Display/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed="__attribute__((__packed__))"' -DUSE_HAL_DRIVER -DSTM32F446xx -I"/home/n0ragam1/workspace/G8-Display/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/Display" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c"
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c
+ 
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c
+Invoking: MCU GCC Compiler
+/home/n0ragam1/workspace/G8-Display/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed="__attribute__((__packed__))"' -DUSE_HAL_DRIVER -DSTM32F446xx -I"/home/n0ragam1/workspace/G8-Display/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/Display" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c"
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c
+ 
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c
+Invoking: MCU GCC Compiler
+/home/n0ragam1/workspace/G8-Display/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed="__attribute__((__packed__))"' -DUSE_HAL_DRIVER -DSTM32F446xx -I"/home/n0ragam1/workspace/G8-Display/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/Display" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c"
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c
+ 
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c
+Invoking: MCU GCC Compiler
+/home/n0ragam1/workspace/G8-Display/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed="__attribute__((__packed__))"' -DUSE_HAL_DRIVER -DSTM32F446xx -I"/home/n0ragam1/workspace/G8-Display/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/Display" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c"
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c
+ 
+Building file: ../Drivers/Display/lcd.c
+Invoking: MCU GCC Compiler
+/home/n0ragam1/workspace/G8-Display/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed="__attribute__((__packed__))"' -DUSE_HAL_DRIVER -DSTM32F446xx -I"/home/n0ragam1/workspace/G8-Display/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/Display" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/Display/lcd.d" -MT"Drivers/Display/lcd.o" -o "Drivers/Display/lcd.o" "../Drivers/Display/lcd.c"
+Finished building: ../Drivers/Display/lcd.c
+ 
+Building target: G8-Display.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F446RETx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "G8-Display.elf" @"objects.list"  
+Finished building target: G8-Display.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "G8-Display.elf" "G8-Display.bin"
+arm-none-eabi-size "G8-Display.elf"
+   text	   data	    bss	    dec	    hex	filename
+  22800	    128	   2120	  25048	   61d8	G8-Display.elf
+ 
+13:22:30 **** Clean-only build of configuration Debug for project G8-Display ****
+make clean 
+rm -rf *
+ 
+13:22:31 **** Incremental Build of configuration Debug for project G8-Display ****
+make all 
+Building file: ../startup/startup_stm32f446xx.s
+Invoking: MCU GCC Assembler
+/home/n0ragam1/workspace/G8-Display/Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "startup/startup_stm32f446xx.o" "../startup/startup_stm32f446xx.s"
+Finished building: ../startup/startup_stm32f446xx.s
+ 
+Building file: ../Src/adc.c
+Invoking: MCU GCC Compiler
+/home/n0ragam1/workspace/G8-Display/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed="__attribute__((__packed__))"' -DUSE_HAL_DRIVER -DSTM32F446xx -I"/home/n0ragam1/workspace/G8-Display/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/Display" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/adc.d" -MT"Src/adc.o" -o "Src/adc.o" "../Src/adc.c"
+Finished building: ../Src/adc.c
+ 
+Building file: ../Src/gpio.c
+Invoking: MCU GCC Compiler
+/home/n0ragam1/workspace/G8-Display/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed="__attribute__((__packed__))"' -DUSE_HAL_DRIVER -DSTM32F446xx -I"/home/n0ragam1/workspace/G8-Display/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/Display" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/gpio.d" -MT"Src/gpio.o" -o "Src/gpio.o" "../Src/gpio.c"
+Finished building: ../Src/gpio.c
+ 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+/home/n0ragam1/workspace/G8-Display/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed="__attribute__((__packed__))"' -DUSE_HAL_DRIVER -DSTM32F446xx -I"/home/n0ragam1/workspace/G8-Display/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/Display" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:168:15: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness [-Wpointer-sign]
+    if (strcmp(left, (char*)command) == 0 )
+               ^
+In file included from /home/n0ragam1/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux32_1.13.1.201703061523/tools/compiler/arm-none-eabi/include/stdio.h:29:0,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:48,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:45,
+                 from /home/n0ragam1/workspace/G8-Display/Inc/stm32f4xx_hal_conf.h:244,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:46,
+                 from ../Src/main.c:41:
+/home/n0ragam1/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux32_1.13.1.201703061523/tools/compiler/arm-none-eabi/include/string.h:32:6: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+../Src/main.c:170:15: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness [-Wpointer-sign]
+    if (strcmp(right, (char*)command) == 0 )
+               ^
+In file included from /home/n0ragam1/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux32_1.13.1.201703061523/tools/compiler/arm-none-eabi/include/stdio.h:29:0,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:48,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:45,
+                 from /home/n0ragam1/workspace/G8-Display/Inc/stm32f4xx_hal_conf.h:244,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:46,
+                 from ../Src/main.c:41:
+/home/n0ragam1/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux32_1.13.1.201703061523/tools/compiler/arm-none-eabi/include/string.h:32:6: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+../Src/main.c:130:11: warning: unused variable 'counterRST' [-Wunused-variable]
+   uint8_t counterRST = 0;
+           ^
+../Src/main.c:128:11: warning: unused variable 'restart' [-Wunused-variable]
+   uint8_t restart[5] = {0};
+           ^
+../Src/main.c: In function 'IsExit':
+../Src/main.c:258:11: warning: unused variable 'height' [-Wunused-variable]
+  uint16_t height = 10;
+           ^
+../Src/main.c: In function 'MoveRectClick':
+../Src/main.c:351:17: warning: variable 'btn4' set but not used [-Wunused-but-set-variable]
+   GPIO_PinState btn4 = GPIO_PIN_RESET;
+                 ^
+Finished building: ../Src/main.c
+ 
+Building file: ../Src/stm32f4xx_hal_msp.c
+Invoking: MCU GCC Compiler
+/home/n0ragam1/workspace/G8-Display/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed="__attribute__((__packed__))"' -DUSE_HAL_DRIVER -DSTM32F446xx -I"/home/n0ragam1/workspace/G8-Display/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/Display" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/stm32f4xx_hal_msp.d" -MT"Src/stm32f4xx_hal_msp.o" -o "Src/stm32f4xx_hal_msp.o" "../Src/stm32f4xx_hal_msp.c"
+Finished building: ../Src/stm32f4xx_hal_msp.c
+ 
+Building file: ../Src/stm32f4xx_it.c
+Invoking: MCU GCC Compiler
+/home/n0ragam1/workspace/G8-Display/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed="__attribute__((__packed__))"' -DUSE_HAL_DRIVER -DSTM32F446xx -I"/home/n0ragam1/workspace/G8-Display/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/Display" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/stm32f4xx_it.d" -MT"Src/stm32f4xx_it.o" -o "Src/stm32f4xx_it.o" "../Src/stm32f4xx_it.c"
+Finished building: ../Src/stm32f4xx_it.c
+ 
+Building file: ../Src/system_stm32f4xx.c
+Invoking: MCU GCC Compiler
+/home/n0ragam1/workspace/G8-Display/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed="__attribute__((__packed__))"' -DUSE_HAL_DRIVER -DSTM32F446xx -I"/home/n0ragam1/workspace/G8-Display/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/Display" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/system_stm32f4xx.d" -MT"Src/system_stm32f4xx.o" -o "Src/system_stm32f4xx.o" "../Src/system_stm32f4xx.c"
+Finished building: ../Src/system_stm32f4xx.c
+ 
+Building file: ../Src/tim.c
+Invoking: MCU GCC Compiler
+/home/n0ragam1/workspace/G8-Display/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed="__attribute__((__packed__))"' -DUSE_HAL_DRIVER -DSTM32F446xx -I"/home/n0ragam1/workspace/G8-Display/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/Display" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/tim.d" -MT"Src/tim.o" -o "Src/tim.o" "../Src/tim.c"
+Finished building: ../Src/tim.c
+ 
+Building file: ../Src/usart.c
+Invoking: MCU GCC Compiler
+/home/n0ragam1/workspace/G8-Display/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed="__attribute__((__packed__))"' -DUSE_HAL_DRIVER -DSTM32F446xx -I"/home/n0ragam1/workspace/G8-Display/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/Display" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/usart.d" -MT"Src/usart.o" -o "Src/usart.o" "../Src/usart.c"
+Finished building: ../Src/usart.c
+ 
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c
+Invoking: MCU GCC Compiler
+/home/n0ragam1/workspace/G8-Display/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed="__attribute__((__packed__))"' -DUSE_HAL_DRIVER -DSTM32F446xx -I"/home/n0ragam1/workspace/G8-Display/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/Display" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c"
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c
+ 
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c
+Invoking: MCU GCC Compiler
+/home/n0ragam1/workspace/G8-Display/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed="__attribute__((__packed__))"' -DUSE_HAL_DRIVER -DSTM32F446xx -I"/home/n0ragam1/workspace/G8-Display/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/Display" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c"
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c
+ 
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c
+Invoking: MCU GCC Compiler
+/home/n0ragam1/workspace/G8-Display/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed="__attribute__((__packed__))"' -DUSE_HAL_DRIVER -DSTM32F446xx -I"/home/n0ragam1/workspace/G8-Display/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/Display" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c"
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c
+ 
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c
+Invoking: MCU GCC Compiler
+/home/n0ragam1/workspace/G8-Display/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed="__attribute__((__packed__))"' -DUSE_HAL_DRIVER -DSTM32F446xx -I"/home/n0ragam1/workspace/G8-Display/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/Display" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c"
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c
+ 
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c
+Invoking: MCU GCC Compiler
+/home/n0ragam1/workspace/G8-Display/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed="__attribute__((__packed__))"' -DUSE_HAL_DRIVER -DSTM32F446xx -I"/home/n0ragam1/workspace/G8-Display/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/Display" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c"
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c
+ 
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c
+Invoking: MCU GCC Compiler
+/home/n0ragam1/workspace/G8-Display/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed="__attribute__((__packed__))"' -DUSE_HAL_DRIVER -DSTM32F446xx -I"/home/n0ragam1/workspace/G8-Display/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/Display" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c"
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c
+ 
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c
+Invoking: MCU GCC Compiler
+/home/n0ragam1/workspace/G8-Display/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed="__attribute__((__packed__))"' -DUSE_HAL_DRIVER -DSTM32F446xx -I"/home/n0ragam1/workspace/G8-Display/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/Display" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c"
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c
+ 
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c
+Invoking: MCU GCC Compiler
+/home/n0ragam1/workspace/G8-Display/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed="__attribute__((__packed__))"' -DUSE_HAL_DRIVER -DSTM32F446xx -I"/home/n0ragam1/workspace/G8-Display/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/Display" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c"
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c
+ 
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c
+Invoking: MCU GCC Compiler
+/home/n0ragam1/workspace/G8-Display/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed="__attribute__((__packed__))"' -DUSE_HAL_DRIVER -DSTM32F446xx -I"/home/n0ragam1/workspace/G8-Display/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/Display" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c"
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c
+ 
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c
+Invoking: MCU GCC Compiler
+/home/n0ragam1/workspace/G8-Display/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed="__attribute__((__packed__))"' -DUSE_HAL_DRIVER -DSTM32F446xx -I"/home/n0ragam1/workspace/G8-Display/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/Display" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c"
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c
+ 
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c
+Invoking: MCU GCC Compiler
+/home/n0ragam1/workspace/G8-Display/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed="__attribute__((__packed__))"' -DUSE_HAL_DRIVER -DSTM32F446xx -I"/home/n0ragam1/workspace/G8-Display/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/Display" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c"
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c
+ 
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c
+Invoking: MCU GCC Compiler
+/home/n0ragam1/workspace/G8-Display/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed="__attribute__((__packed__))"' -DUSE_HAL_DRIVER -DSTM32F446xx -I"/home/n0ragam1/workspace/G8-Display/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/Display" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c"
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c
+ 
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c
+Invoking: MCU GCC Compiler
+/home/n0ragam1/workspace/G8-Display/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed="__attribute__((__packed__))"' -DUSE_HAL_DRIVER -DSTM32F446xx -I"/home/n0ragam1/workspace/G8-Display/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/Display" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c"
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c
+ 
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c
+Invoking: MCU GCC Compiler
+/home/n0ragam1/workspace/G8-Display/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed="__attribute__((__packed__))"' -DUSE_HAL_DRIVER -DSTM32F446xx -I"/home/n0ragam1/workspace/G8-Display/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/Display" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c"
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c
+ 
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c
+Invoking: MCU GCC Compiler
+/home/n0ragam1/workspace/G8-Display/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed="__attribute__((__packed__))"' -DUSE_HAL_DRIVER -DSTM32F446xx -I"/home/n0ragam1/workspace/G8-Display/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/Display" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c"
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c
+ 
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c
+Invoking: MCU GCC Compiler
+/home/n0ragam1/workspace/G8-Display/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed="__attribute__((__packed__))"' -DUSE_HAL_DRIVER -DSTM32F446xx -I"/home/n0ragam1/workspace/G8-Display/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/Display" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c"
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c
+ 
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c
+Invoking: MCU GCC Compiler
+/home/n0ragam1/workspace/G8-Display/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed="__attribute__((__packed__))"' -DUSE_HAL_DRIVER -DSTM32F446xx -I"/home/n0ragam1/workspace/G8-Display/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/Display" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c"
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c
+ 
+Building file: ../Drivers/Display/Fonts/font12.c
+Invoking: MCU GCC Compiler
+/home/n0ragam1/workspace/G8-Display/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed="__attribute__((__packed__))"' -DUSE_HAL_DRIVER -DSTM32F446xx -I"/home/n0ragam1/workspace/G8-Display/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/Display" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/Display/Fonts/font12.d" -MT"Drivers/Display/Fonts/font12.o" -o "Drivers/Display/Fonts/font12.o" "../Drivers/Display/Fonts/font12.c"
+Finished building: ../Drivers/Display/Fonts/font12.c
+ 
+Building file: ../Drivers/Display/Fonts/font16.c
+Invoking: MCU GCC Compiler
+/home/n0ragam1/workspace/G8-Display/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed="__attribute__((__packed__))"' -DUSE_HAL_DRIVER -DSTM32F446xx -I"/home/n0ragam1/workspace/G8-Display/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/Display" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/Display/Fonts/font16.d" -MT"Drivers/Display/Fonts/font16.o" -o "Drivers/Display/Fonts/font16.o" "../Drivers/Display/Fonts/font16.c"
+Finished building: ../Drivers/Display/Fonts/font16.c
+ 
+Building file: ../Drivers/Display/Fonts/font20.c
+Invoking: MCU GCC Compiler
+/home/n0ragam1/workspace/G8-Display/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed="__attribute__((__packed__))"' -DUSE_HAL_DRIVER -DSTM32F446xx -I"/home/n0ragam1/workspace/G8-Display/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/Display" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/Display/Fonts/font20.d" -MT"Drivers/Display/Fonts/font20.o" -o "Drivers/Display/Fonts/font20.o" "../Drivers/Display/Fonts/font20.c"
+Finished building: ../Drivers/Display/Fonts/font20.c
+ 
+Building file: ../Drivers/Display/Fonts/font24.c
+Invoking: MCU GCC Compiler
+/home/n0ragam1/workspace/G8-Display/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed="__attribute__((__packed__))"' -DUSE_HAL_DRIVER -DSTM32F446xx -I"/home/n0ragam1/workspace/G8-Display/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/Display" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/Display/Fonts/font24.d" -MT"Drivers/Display/Fonts/font24.o" -o "Drivers/Display/Fonts/font24.o" "../Drivers/Display/Fonts/font24.c"
+Finished building: ../Drivers/Display/Fonts/font24.c
+ 
+Building file: ../Drivers/Display/Fonts/font8.c
+Invoking: MCU GCC Compiler
+/home/n0ragam1/workspace/G8-Display/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed="__attribute__((__packed__))"' -DUSE_HAL_DRIVER -DSTM32F446xx -I"/home/n0ragam1/workspace/G8-Display/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/Display" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/Display/Fonts/font8.d" -MT"Drivers/Display/Fonts/font8.o" -o "Drivers/Display/Fonts/font8.o" "../Drivers/Display/Fonts/font8.c"
+Finished building: ../Drivers/Display/Fonts/font8.c
+ 
+Building file: ../Drivers/Display/lcd.c
+Invoking: MCU GCC Compiler
+/home/n0ragam1/workspace/G8-Display/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed="__attribute__((__packed__))"' -DUSE_HAL_DRIVER -DSTM32F446xx -I"/home/n0ragam1/workspace/G8-Display/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/Display" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/Display/lcd.d" -MT"Drivers/Display/lcd.o" -o "Drivers/Display/lcd.o" "../Drivers/Display/lcd.c"
+Finished building: ../Drivers/Display/lcd.c
+ 
+Building target: G8-Display.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F446RETx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "G8-Display.elf" @"objects.list"  
+Finished building target: G8-Display.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "G8-Display.elf" "G8-Display.bin"
+arm-none-eabi-size "G8-Display.elf"
+   text	   data	    bss	    dec	    hex	filename
+  22800	    128	   2120	  25048	   61d8	G8-Display.elf
+ 
+13:24:50 **** Incremental Build of configuration Debug for project G8-Display ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+/home/n0ragam1/workspace/G8-Display/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed="__attribute__((__packed__))"' -DUSE_HAL_DRIVER -DSTM32F446xx -I"/home/n0ragam1/workspace/G8-Display/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/Display" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:168:15: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness [-Wpointer-sign]
+    if (strcmp(left, command) == 0 )
+               ^
+In file included from /home/n0ragam1/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux32_1.13.1.201703061523/tools/compiler/arm-none-eabi/include/stdio.h:29:0,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:48,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:45,
+                 from /home/n0ragam1/workspace/G8-Display/Inc/stm32f4xx_hal_conf.h:244,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:46,
+                 from ../Src/main.c:41:
+/home/n0ragam1/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux32_1.13.1.201703061523/tools/compiler/arm-none-eabi/include/string.h:32:6: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+../Src/main.c:168:21: warning: pointer targets in passing argument 2 of 'strcmp' differ in signedness [-Wpointer-sign]
+    if (strcmp(left, command) == 0 )
+                     ^
+In file included from /home/n0ragam1/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux32_1.13.1.201703061523/tools/compiler/arm-none-eabi/include/stdio.h:29:0,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:48,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:45,
+                 from /home/n0ragam1/workspace/G8-Display/Inc/stm32f4xx_hal_conf.h:244,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:46,
+                 from ../Src/main.c:41:
+/home/n0ragam1/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux32_1.13.1.201703061523/tools/compiler/arm-none-eabi/include/string.h:32:6: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+../Src/main.c:170:15: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness [-Wpointer-sign]
+    if (strcmp(right, command) == 0 )
+               ^
+In file included from /home/n0ragam1/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux32_1.13.1.201703061523/tools/compiler/arm-none-eabi/include/stdio.h:29:0,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:48,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:45,
+                 from /home/n0ragam1/workspace/G8-Display/Inc/stm32f4xx_hal_conf.h:244,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:46,
+                 from ../Src/main.c:41:
+/home/n0ragam1/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux32_1.13.1.201703061523/tools/compiler/arm-none-eabi/include/string.h:32:6: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+../Src/main.c:170:22: warning: pointer targets in passing argument 2 of 'strcmp' differ in signedness [-Wpointer-sign]
+    if (strcmp(right, command) == 0 )
+                      ^
+In file included from /home/n0ragam1/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux32_1.13.1.201703061523/tools/compiler/arm-none-eabi/include/stdio.h:29:0,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:48,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:45,
+                 from /home/n0ragam1/workspace/G8-Display/Inc/stm32f4xx_hal_conf.h:244,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:46,
+                 from ../Src/main.c:41:
+/home/n0ragam1/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux32_1.13.1.201703061523/tools/compiler/arm-none-eabi/include/string.h:32:6: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+../Src/main.c:130:11: warning: unused variable 'counterRST' [-Wunused-variable]
+   uint8_t counterRST = 0;
+           ^
+../Src/main.c:128:11: warning: unused variable 'restart' [-Wunused-variable]
+   uint8_t restart[5] = {0};
+           ^
+../Src/main.c: In function 'IsExit':
+../Src/main.c:258:11: warning: unused variable 'height' [-Wunused-variable]
+  uint16_t height = 10;
+           ^
+../Src/main.c: In function 'MoveRectClick':
+../Src/main.c:351:17: warning: variable 'btn4' set but not used [-Wunused-but-set-variable]
+   GPIO_PinState btn4 = GPIO_PIN_RESET;
+                 ^
+Finished building: ../Src/main.c
+ 
+Building target: G8-Display.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F446RETx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "G8-Display.elf" @"objects.list"  
+Finished building target: G8-Display.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "G8-Display.elf" "G8-Display.bin"
+arm-none-eabi-size "G8-Display.elf"
+   text	   data	    bss	    dec	    hex	filename
+  22800	    128	   2120	  25048	   61d8	G8-Display.elf
+ 
+13:27:52 **** Incremental Build of configuration Debug for project G8-Display ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+/home/n0ragam1/workspace/G8-Display/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed="__attribute__((__packed__))"' -DUSE_HAL_DRIVER -DSTM32F446xx -I"/home/n0ragam1/workspace/G8-Display/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/Display" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:168:15: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness [-Wpointer-sign]
+    if (strcmp(left, command) == 0 )
+               ^
+In file included from /home/n0ragam1/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux32_1.13.1.201703061523/tools/compiler/arm-none-eabi/include/stdio.h:29:0,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:48,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:45,
+                 from /home/n0ragam1/workspace/G8-Display/Inc/stm32f4xx_hal_conf.h:244,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:46,
+                 from ../Src/main.c:41:
+/home/n0ragam1/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux32_1.13.1.201703061523/tools/compiler/arm-none-eabi/include/string.h:32:6: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+../Src/main.c:168:21: warning: pointer targets in passing argument 2 of 'strcmp' differ in signedness [-Wpointer-sign]
+    if (strcmp(left, command) == 0 )
+                     ^
+In file included from /home/n0ragam1/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux32_1.13.1.201703061523/tools/compiler/arm-none-eabi/include/stdio.h:29:0,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:48,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:45,
+                 from /home/n0ragam1/workspace/G8-Display/Inc/stm32f4xx_hal_conf.h:244,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:46,
+                 from ../Src/main.c:41:
+/home/n0ragam1/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux32_1.13.1.201703061523/tools/compiler/arm-none-eabi/include/string.h:32:6: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+../Src/main.c:170:15: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness [-Wpointer-sign]
+    if (strcmp(right, command) == 0 )
+               ^
+In file included from /home/n0ragam1/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux32_1.13.1.201703061523/tools/compiler/arm-none-eabi/include/stdio.h:29:0,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:48,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:45,
+                 from /home/n0ragam1/workspace/G8-Display/Inc/stm32f4xx_hal_conf.h:244,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:46,
+                 from ../Src/main.c:41:
+/home/n0ragam1/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux32_1.13.1.201703061523/tools/compiler/arm-none-eabi/include/string.h:32:6: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+../Src/main.c:170:22: warning: pointer targets in passing argument 2 of 'strcmp' differ in signedness [-Wpointer-sign]
+    if (strcmp(right, command) == 0 )
+                      ^
+In file included from /home/n0ragam1/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux32_1.13.1.201703061523/tools/compiler/arm-none-eabi/include/stdio.h:29:0,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:48,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:45,
+                 from /home/n0ragam1/workspace/G8-Display/Inc/stm32f4xx_hal_conf.h:244,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:46,
+                 from ../Src/main.c:41:
+/home/n0ragam1/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux32_1.13.1.201703061523/tools/compiler/arm-none-eabi/include/string.h:32:6: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+../Src/main.c:130:11: warning: unused variable 'counterRST' [-Wunused-variable]
+   uint8_t counterRST = 0;
+           ^
+../Src/main.c:128:11: warning: unused variable 'restart' [-Wunused-variable]
+   uint8_t restart[5] = {0};
+           ^
+../Src/main.c: In function 'IsExit':
+../Src/main.c:258:11: warning: unused variable 'height' [-Wunused-variable]
+  uint16_t height = 10;
+           ^
+../Src/main.c: In function 'MoveRectClick':
+../Src/main.c:351:17: warning: variable 'btn4' set but not used [-Wunused-but-set-variable]
+   GPIO_PinState btn4 = GPIO_PIN_RESET;
+                 ^
+Finished building: ../Src/main.c
+ 
+Building target: G8-Display.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F446RETx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "G8-Display.elf" @"objects.list"  
+Finished building target: G8-Display.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "G8-Display.elf" "G8-Display.bin"
+arm-none-eabi-size "G8-Display.elf"
+   text	   data	    bss	    dec	    hex	filename
+  22796	    128	   2120	  25044	   61d4	G8-Display.elf
+ 
+13:29:22 **** Incremental Build of configuration Debug for project G8-Display ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+/home/n0ragam1/workspace/G8-Display/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed="__attribute__((__packed__))"' -DUSE_HAL_DRIVER -DSTM32F446xx -I"/home/n0ragam1/workspace/G8-Display/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/Display" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:168:15: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness [-Wpointer-sign]
+    if (strcmp(left, command) == 0 )
+               ^
+In file included from /home/n0ragam1/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux32_1.13.1.201703061523/tools/compiler/arm-none-eabi/include/stdio.h:29:0,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:48,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:45,
+                 from /home/n0ragam1/workspace/G8-Display/Inc/stm32f4xx_hal_conf.h:244,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:46,
+                 from ../Src/main.c:41:
+/home/n0ragam1/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux32_1.13.1.201703061523/tools/compiler/arm-none-eabi/include/string.h:32:6: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+../Src/main.c:168:21: warning: pointer targets in passing argument 2 of 'strcmp' differ in signedness [-Wpointer-sign]
+    if (strcmp(left, command) == 0 )
+                     ^
+In file included from /home/n0ragam1/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux32_1.13.1.201703061523/tools/compiler/arm-none-eabi/include/stdio.h:29:0,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:48,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:45,
+                 from /home/n0ragam1/workspace/G8-Display/Inc/stm32f4xx_hal_conf.h:244,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:46,
+                 from ../Src/main.c:41:
+/home/n0ragam1/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux32_1.13.1.201703061523/tools/compiler/arm-none-eabi/include/string.h:32:6: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+../Src/main.c:170:15: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness [-Wpointer-sign]
+    if (strcmp(right, command) == 0 )
+               ^
+In file included from /home/n0ragam1/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux32_1.13.1.201703061523/tools/compiler/arm-none-eabi/include/stdio.h:29:0,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:48,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:45,
+                 from /home/n0ragam1/workspace/G8-Display/Inc/stm32f4xx_hal_conf.h:244,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:46,
+                 from ../Src/main.c:41:
+/home/n0ragam1/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux32_1.13.1.201703061523/tools/compiler/arm-none-eabi/include/string.h:32:6: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+../Src/main.c:170:22: warning: pointer targets in passing argument 2 of 'strcmp' differ in signedness [-Wpointer-sign]
+    if (strcmp(right, command) == 0 )
+                      ^
+In file included from /home/n0ragam1/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux32_1.13.1.201703061523/tools/compiler/arm-none-eabi/include/stdio.h:29:0,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:48,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:45,
+                 from /home/n0ragam1/workspace/G8-Display/Inc/stm32f4xx_hal_conf.h:244,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:46,
+                 from ../Src/main.c:41:
+/home/n0ragam1/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux32_1.13.1.201703061523/tools/compiler/arm-none-eabi/include/string.h:32:6: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+../Src/main.c:130:11: warning: unused variable 'counterRST' [-Wunused-variable]
+   uint8_t counterRST = 0;
+           ^
+../Src/main.c:128:11: warning: unused variable 'restart' [-Wunused-variable]
+   uint8_t restart[5] = {0};
+           ^
+../Src/main.c: In function 'IsExit':
+../Src/main.c:258:11: warning: unused variable 'height' [-Wunused-variable]
+  uint16_t height = 10;
+           ^
+../Src/main.c: In function 'MoveRectClick':
+../Src/main.c:351:17: warning: variable 'btn4' set but not used [-Wunused-but-set-variable]
+   GPIO_PinState btn4 = GPIO_PIN_RESET;
+                 ^
+Finished building: ../Src/main.c
+ 
+Building target: G8-Display.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F446RETx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "G8-Display.elf" @"objects.list"  
+Finished building target: G8-Display.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "G8-Display.elf" "G8-Display.bin"
+arm-none-eabi-size "G8-Display.elf"
+   text	   data	    bss	    dec	    hex	filename
+  22536	    128	   2120	  24784	   60d0	G8-Display.elf
+ 
+13:30:38 **** Incremental Build of configuration Debug for project G8-Display ****
+make all 
+Building file: ../Src/usart.c
+Invoking: MCU GCC Compiler
+/home/n0ragam1/workspace/G8-Display/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed="__attribute__((__packed__))"' -DUSE_HAL_DRIVER -DSTM32F446xx -I"/home/n0ragam1/workspace/G8-Display/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/Display" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/usart.d" -MT"Src/usart.o" -o "Src/usart.o" "../Src/usart.c"
+Finished building: ../Src/usart.c
+ 
+Building target: G8-Display.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F446RETx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "G8-Display.elf" @"objects.list"  
+Finished building target: G8-Display.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "G8-Display.elf" "G8-Display.bin"
+arm-none-eabi-size "G8-Display.elf"
+   text	   data	    bss	    dec	    hex	filename
+  22536	    128	   2120	  24784	   60d0	G8-Display.elf
+ 
+13:32:31 **** Incremental Build of configuration Debug for project G8-Display ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+/home/n0ragam1/workspace/G8-Display/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed="__attribute__((__packed__))"' -DUSE_HAL_DRIVER -DSTM32F446xx -I"/home/n0ragam1/workspace/G8-Display/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/Display" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:169:15: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness [-Wpointer-sign]
+    if (strcmp(left, command) == 0 )
+               ^
+In file included from /home/n0ragam1/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux32_1.13.1.201703061523/tools/compiler/arm-none-eabi/include/stdio.h:29:0,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:48,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:45,
+                 from /home/n0ragam1/workspace/G8-Display/Inc/stm32f4xx_hal_conf.h:244,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:46,
+                 from ../Src/main.c:41:
+/home/n0ragam1/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux32_1.13.1.201703061523/tools/compiler/arm-none-eabi/include/string.h:32:6: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+../Src/main.c:169:21: warning: pointer targets in passing argument 2 of 'strcmp' differ in signedness [-Wpointer-sign]
+    if (strcmp(left, command) == 0 )
+                     ^
+In file included from /home/n0ragam1/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux32_1.13.1.201703061523/tools/compiler/arm-none-eabi/include/stdio.h:29:0,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:48,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:45,
+                 from /home/n0ragam1/workspace/G8-Display/Inc/stm32f4xx_hal_conf.h:244,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:46,
+                 from ../Src/main.c:41:
+/home/n0ragam1/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux32_1.13.1.201703061523/tools/compiler/arm-none-eabi/include/string.h:32:6: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+../Src/main.c:171:15: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness [-Wpointer-sign]
+    if (strcmp(right, command) == 0 )
+               ^
+In file included from /home/n0ragam1/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux32_1.13.1.201703061523/tools/compiler/arm-none-eabi/include/stdio.h:29:0,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:48,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:45,
+                 from /home/n0ragam1/workspace/G8-Display/Inc/stm32f4xx_hal_conf.h:244,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:46,
+                 from ../Src/main.c:41:
+/home/n0ragam1/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux32_1.13.1.201703061523/tools/compiler/arm-none-eabi/include/string.h:32:6: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+../Src/main.c:171:22: warning: pointer targets in passing argument 2 of 'strcmp' differ in signedness [-Wpointer-sign]
+    if (strcmp(right, command) == 0 )
+                      ^
+In file included from /home/n0ragam1/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux32_1.13.1.201703061523/tools/compiler/arm-none-eabi/include/stdio.h:29:0,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:48,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:45,
+                 from /home/n0ragam1/workspace/G8-Display/Inc/stm32f4xx_hal_conf.h:244,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:46,
+                 from ../Src/main.c:41:
+/home/n0ragam1/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux32_1.13.1.201703061523/tools/compiler/arm-none-eabi/include/string.h:32:6: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+../Src/main.c:130:11: warning: unused variable 'counterRST' [-Wunused-variable]
+   uint8_t counterRST = 0;
+           ^
+../Src/main.c:128:11: warning: unused variable 'restart' [-Wunused-variable]
+   uint8_t restart[5] = {0};
+           ^
+../Src/main.c: In function 'IsExit':
+../Src/main.c:259:11: warning: unused variable 'height' [-Wunused-variable]
+  uint16_t height = 10;
+           ^
+../Src/main.c: In function 'MoveRectClick':
+../Src/main.c:352:17: warning: variable 'btn4' set but not used [-Wunused-but-set-variable]
+   GPIO_PinState btn4 = GPIO_PIN_RESET;
+                 ^
+Finished building: ../Src/main.c
+ 
+Building target: G8-Display.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F446RETx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "G8-Display.elf" @"objects.list"  
+Finished building target: G8-Display.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "G8-Display.elf" "G8-Display.bin"
+arm-none-eabi-size "G8-Display.elf"
+   text	   data	    bss	    dec	    hex	filename
+  22540	    128	   2120	  24788	   60d4	G8-Display.elf
+ 
+13:34:59 **** Incremental Build of configuration Debug for project G8-Display ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+/home/n0ragam1/workspace/G8-Display/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed="__attribute__((__packed__))"' -DUSE_HAL_DRIVER -DSTM32F446xx -I"/home/n0ragam1/workspace/G8-Display/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/Display" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:169:18: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness [-Wpointer-sign]
+       if (strcmp(left, command) == 0 )
+                  ^
+In file included from /home/n0ragam1/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux32_1.13.1.201703061523/tools/compiler/arm-none-eabi/include/stdio.h:29:0,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:48,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:45,
+                 from /home/n0ragam1/workspace/G8-Display/Inc/stm32f4xx_hal_conf.h:244,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:46,
+                 from ../Src/main.c:41:
+/home/n0ragam1/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux32_1.13.1.201703061523/tools/compiler/arm-none-eabi/include/string.h:32:6: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+../Src/main.c:169:24: warning: pointer targets in passing argument 2 of 'strcmp' differ in signedness [-Wpointer-sign]
+       if (strcmp(left, command) == 0 )
+                        ^
+In file included from /home/n0ragam1/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux32_1.13.1.201703061523/tools/compiler/arm-none-eabi/include/stdio.h:29:0,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:48,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:45,
+                 from /home/n0ragam1/workspace/G8-Display/Inc/stm32f4xx_hal_conf.h:244,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:46,
+                 from ../Src/main.c:41:
+/home/n0ragam1/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux32_1.13.1.201703061523/tools/compiler/arm-none-eabi/include/string.h:32:6: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+../Src/main.c:171:18: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness [-Wpointer-sign]
+       if (strcmp(right, command) == 0 )
+                  ^
+In file included from /home/n0ragam1/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux32_1.13.1.201703061523/tools/compiler/arm-none-eabi/include/stdio.h:29:0,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:48,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:45,
+                 from /home/n0ragam1/workspace/G8-Display/Inc/stm32f4xx_hal_conf.h:244,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:46,
+                 from ../Src/main.c:41:
+/home/n0ragam1/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux32_1.13.1.201703061523/tools/compiler/arm-none-eabi/include/string.h:32:6: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+../Src/main.c:171:25: warning: pointer targets in passing argument 2 of 'strcmp' differ in signedness [-Wpointer-sign]
+       if (strcmp(right, command) == 0 )
+                         ^
+In file included from /home/n0ragam1/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux32_1.13.1.201703061523/tools/compiler/arm-none-eabi/include/stdio.h:29:0,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:48,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:45,
+                 from /home/n0ragam1/workspace/G8-Display/Inc/stm32f4xx_hal_conf.h:244,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:46,
+                 from ../Src/main.c:41:
+/home/n0ragam1/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux32_1.13.1.201703061523/tools/compiler/arm-none-eabi/include/string.h:32:6: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+../Src/main.c:130:11: warning: unused variable 'counterRST' [-Wunused-variable]
+   uint8_t counterRST = 0;
+           ^
+../Src/main.c:128:11: warning: unused variable 'restart' [-Wunused-variable]
+   uint8_t restart[5] = {0};
+           ^
+../Src/main.c: In function 'IsExit':
+../Src/main.c:262:11: warning: unused variable 'height' [-Wunused-variable]
+  uint16_t height = 10;
+           ^
+../Src/main.c: In function 'MoveRectClick':
+../Src/main.c:355:17: warning: variable 'btn4' set but not used [-Wunused-but-set-variable]
+   GPIO_PinState btn4 = GPIO_PIN_RESET;
+                 ^
+Finished building: ../Src/main.c
+ 
+Building target: G8-Display.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F446RETx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "G8-Display.elf" @"objects.list"  
+Finished building target: G8-Display.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "G8-Display.elf" "G8-Display.bin"
+arm-none-eabi-size "G8-Display.elf"
+   text	   data	    bss	    dec	    hex	filename
+  22540	    128	   2120	  24788	   60d4	G8-Display.elf
+ 
+13:35:28 **** Incremental Build of configuration Debug for project G8-Display ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+/home/n0ragam1/workspace/G8-Display/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed="__attribute__((__packed__))"' -DUSE_HAL_DRIVER -DSTM32F446xx -I"/home/n0ragam1/workspace/G8-Display/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/Display" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:169:18: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness [-Wpointer-sign]
+       if (strcmp(left, command) == 0 )
+                  ^
+In file included from /home/n0ragam1/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux32_1.13.1.201703061523/tools/compiler/arm-none-eabi/include/stdio.h:29:0,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:48,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:45,
+                 from /home/n0ragam1/workspace/G8-Display/Inc/stm32f4xx_hal_conf.h:244,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:46,
+                 from ../Src/main.c:41:
+/home/n0ragam1/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux32_1.13.1.201703061523/tools/compiler/arm-none-eabi/include/string.h:32:6: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+../Src/main.c:169:24: warning: pointer targets in passing argument 2 of 'strcmp' differ in signedness [-Wpointer-sign]
+       if (strcmp(left, command) == 0 )
+                        ^
+In file included from /home/n0ragam1/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux32_1.13.1.201703061523/tools/compiler/arm-none-eabi/include/stdio.h:29:0,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:48,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:45,
+                 from /home/n0ragam1/workspace/G8-Display/Inc/stm32f4xx_hal_conf.h:244,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:46,
+                 from ../Src/main.c:41:
+/home/n0ragam1/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux32_1.13.1.201703061523/tools/compiler/arm-none-eabi/include/string.h:32:6: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+../Src/main.c:171:18: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness [-Wpointer-sign]
+       if (strcmp(right, command) == 0 )
+                  ^
+In file included from /home/n0ragam1/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux32_1.13.1.201703061523/tools/compiler/arm-none-eabi/include/stdio.h:29:0,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:48,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:45,
+                 from /home/n0ragam1/workspace/G8-Display/Inc/stm32f4xx_hal_conf.h:244,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:46,
+                 from ../Src/main.c:41:
+/home/n0ragam1/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux32_1.13.1.201703061523/tools/compiler/arm-none-eabi/include/string.h:32:6: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+../Src/main.c:171:25: warning: pointer targets in passing argument 2 of 'strcmp' differ in signedness [-Wpointer-sign]
+       if (strcmp(right, command) == 0 )
+                         ^
+In file included from /home/n0ragam1/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux32_1.13.1.201703061523/tools/compiler/arm-none-eabi/include/stdio.h:29:0,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:48,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:45,
+                 from /home/n0ragam1/workspace/G8-Display/Inc/stm32f4xx_hal_conf.h:244,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:46,
+                 from ../Src/main.c:41:
+/home/n0ragam1/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux32_1.13.1.201703061523/tools/compiler/arm-none-eabi/include/string.h:32:6: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+../Src/main.c:130:11: warning: unused variable 'counterRST' [-Wunused-variable]
+   uint8_t counterRST = 0;
+           ^
+../Src/main.c:128:11: warning: unused variable 'restart' [-Wunused-variable]
+   uint8_t restart[5] = {0};
+           ^
+../Src/main.c: In function 'IsExit':
+../Src/main.c:262:11: warning: unused variable 'height' [-Wunused-variable]
+  uint16_t height = 10;
+           ^
+../Src/main.c: In function 'MoveRectClick':
+../Src/main.c:355:17: warning: variable 'btn4' set but not used [-Wunused-but-set-variable]
+   GPIO_PinState btn4 = GPIO_PIN_RESET;
+                 ^
+Finished building: ../Src/main.c
+ 
+Building target: G8-Display.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F446RETx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "G8-Display.elf" @"objects.list"  
+Finished building target: G8-Display.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "G8-Display.elf" "G8-Display.bin"
+arm-none-eabi-size "G8-Display.elf"
+   text	   data	    bss	    dec	    hex	filename
+  22804	    128	   2120	  25052	   61dc	G8-Display.elf
+ 
+13:38:36 **** Incremental Build of configuration Debug for project G8-Display ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+/home/n0ragam1/workspace/G8-Display/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed="__attribute__((__packed__))"' -DUSE_HAL_DRIVER -DSTM32F446xx -I"/home/n0ragam1/workspace/G8-Display/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/Display" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:169:18: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness [-Wpointer-sign]
+       if (strcmp(left, command) == 0 )
+                  ^
+In file included from /home/n0ragam1/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux32_1.13.1.201703061523/tools/compiler/arm-none-eabi/include/stdio.h:29:0,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:48,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:45,
+                 from /home/n0ragam1/workspace/G8-Display/Inc/stm32f4xx_hal_conf.h:244,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:46,
+                 from ../Src/main.c:41:
+/home/n0ragam1/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux32_1.13.1.201703061523/tools/compiler/arm-none-eabi/include/string.h:32:6: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+../Src/main.c:169:24: warning: pointer targets in passing argument 2 of 'strcmp' differ in signedness [-Wpointer-sign]
+       if (strcmp(left, command) == 0 )
+                        ^
+In file included from /home/n0ragam1/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux32_1.13.1.201703061523/tools/compiler/arm-none-eabi/include/stdio.h:29:0,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:48,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:45,
+                 from /home/n0ragam1/workspace/G8-Display/Inc/stm32f4xx_hal_conf.h:244,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:46,
+                 from ../Src/main.c:41:
+/home/n0ragam1/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux32_1.13.1.201703061523/tools/compiler/arm-none-eabi/include/string.h:32:6: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+../Src/main.c:171:18: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness [-Wpointer-sign]
+       if (strcmp(right, command) == 0 )
+                  ^
+In file included from /home/n0ragam1/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux32_1.13.1.201703061523/tools/compiler/arm-none-eabi/include/stdio.h:29:0,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:48,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:45,
+                 from /home/n0ragam1/workspace/G8-Display/Inc/stm32f4xx_hal_conf.h:244,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:46,
+                 from ../Src/main.c:41:
+/home/n0ragam1/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux32_1.13.1.201703061523/tools/compiler/arm-none-eabi/include/string.h:32:6: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+../Src/main.c:171:25: warning: pointer targets in passing argument 2 of 'strcmp' differ in signedness [-Wpointer-sign]
+       if (strcmp(right, command) == 0 )
+                         ^
+In file included from /home/n0ragam1/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux32_1.13.1.201703061523/tools/compiler/arm-none-eabi/include/stdio.h:29:0,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:48,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:45,
+                 from /home/n0ragam1/workspace/G8-Display/Inc/stm32f4xx_hal_conf.h:244,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:46,
+                 from ../Src/main.c:41:
+/home/n0ragam1/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux32_1.13.1.201703061523/tools/compiler/arm-none-eabi/include/string.h:32:6: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+../Src/main.c:130:11: warning: unused variable 'counterRST' [-Wunused-variable]
+   uint8_t counterRST = 0;
+           ^
+../Src/main.c:128:11: warning: unused variable 'restart' [-Wunused-variable]
+   uint8_t restart[5] = {0};
+           ^
+../Src/main.c: In function 'IsExit':
+../Src/main.c:262:11: warning: unused variable 'height' [-Wunused-variable]
+  uint16_t height = 10;
+           ^
+../Src/main.c: In function 'MoveRectClick':
+../Src/main.c:355:17: warning: variable 'btn4' set but not used [-Wunused-but-set-variable]
+   GPIO_PinState btn4 = GPIO_PIN_RESET;
+                 ^
+Finished building: ../Src/main.c
+ 
+Building target: G8-Display.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F446RETx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "G8-Display.elf" @"objects.list"  
+Finished building target: G8-Display.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "G8-Display.elf" "G8-Display.bin"
+arm-none-eabi-size "G8-Display.elf"
+   text	   data	    bss	    dec	    hex	filename
+  22528	    128	   2120	  24776	   60c8	G8-Display.elf
+ 
+13:42:11 **** Incremental Build of configuration Debug for project G8-Display ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+/home/n0ragam1/workspace/G8-Display/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed="__attribute__((__packed__))"' -DUSE_HAL_DRIVER -DSTM32F446xx -I"/home/n0ragam1/workspace/G8-Display/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/Display" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:170:17: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness [-Wpointer-sign]
+      if (strcmp(left, command) == 0 )
+                 ^
+In file included from /home/n0ragam1/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux32_1.13.1.201703061523/tools/compiler/arm-none-eabi/include/stdio.h:29:0,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:48,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:45,
+                 from /home/n0ragam1/workspace/G8-Display/Inc/stm32f4xx_hal_conf.h:244,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:46,
+                 from ../Src/main.c:41:
+/home/n0ragam1/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux32_1.13.1.201703061523/tools/compiler/arm-none-eabi/include/string.h:32:6: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+../Src/main.c:170:23: warning: pointer targets in passing argument 2 of 'strcmp' differ in signedness [-Wpointer-sign]
+      if (strcmp(left, command) == 0 )
+                       ^
+In file included from /home/n0ragam1/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux32_1.13.1.201703061523/tools/compiler/arm-none-eabi/include/stdio.h:29:0,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:48,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:45,
+                 from /home/n0ragam1/workspace/G8-Display/Inc/stm32f4xx_hal_conf.h:244,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:46,
+                 from ../Src/main.c:41:
+/home/n0ragam1/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux32_1.13.1.201703061523/tools/compiler/arm-none-eabi/include/string.h:32:6: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+../Src/main.c:172:17: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness [-Wpointer-sign]
+      if (strcmp(right, command) == 0 )
+                 ^
+In file included from /home/n0ragam1/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux32_1.13.1.201703061523/tools/compiler/arm-none-eabi/include/stdio.h:29:0,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:48,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:45,
+                 from /home/n0ragam1/workspace/G8-Display/Inc/stm32f4xx_hal_conf.h:244,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:46,
+                 from ../Src/main.c:41:
+/home/n0ragam1/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux32_1.13.1.201703061523/tools/compiler/arm-none-eabi/include/string.h:32:6: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+../Src/main.c:172:24: warning: pointer targets in passing argument 2 of 'strcmp' differ in signedness [-Wpointer-sign]
+      if (strcmp(right, command) == 0 )
+                        ^
+In file included from /home/n0ragam1/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux32_1.13.1.201703061523/tools/compiler/arm-none-eabi/include/stdio.h:29:0,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:48,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:45,
+                 from /home/n0ragam1/workspace/G8-Display/Inc/stm32f4xx_hal_conf.h:244,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:46,
+                 from ../Src/main.c:41:
+/home/n0ragam1/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux32_1.13.1.201703061523/tools/compiler/arm-none-eabi/include/string.h:32:6: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+../Src/main.c:130:11: warning: unused variable 'counterRST' [-Wunused-variable]
+   uint8_t counterRST = 0;
+           ^
+../Src/main.c:128:11: warning: unused variable 'restart' [-Wunused-variable]
+   uint8_t restart[5] = {0};
+           ^
+../Src/main.c: In function 'IsExit':
+../Src/main.c:263:11: warning: unused variable 'height' [-Wunused-variable]
+  uint16_t height = 10;
+           ^
+../Src/main.c: In function 'MoveRectClick':
+../Src/main.c:356:17: warning: variable 'btn4' set but not used [-Wunused-but-set-variable]
+   GPIO_PinState btn4 = GPIO_PIN_RESET;
+                 ^
+Finished building: ../Src/main.c
+ 
+Building target: G8-Display.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F446RETx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "G8-Display.elf" @"objects.list"  
+Finished building target: G8-Display.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "G8-Display.elf" "G8-Display.bin"
+arm-none-eabi-size "G8-Display.elf"
+   text	   data	    bss	    dec	    hex	filename
+  22528	    128	   2120	  24776	   60c8	G8-Display.elf
+ 
+13:43:42 **** Incremental Build of configuration Debug for project G8-Display ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+/home/n0ragam1/workspace/G8-Display/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed="__attribute__((__packed__))"' -DUSE_HAL_DRIVER -DSTM32F446xx -I"/home/n0ragam1/workspace/G8-Display/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/Display" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc" -I"/home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"/home/n0ragam1/workspace/G8-Display/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:170:17: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness [-Wpointer-sign]
+      if (strcmp(left, command) == 0 )
+                 ^
+In file included from /home/n0ragam1/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux32_1.13.1.201703061523/tools/compiler/arm-none-eabi/include/stdio.h:29:0,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:48,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:45,
+                 from /home/n0ragam1/workspace/G8-Display/Inc/stm32f4xx_hal_conf.h:244,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:46,
+                 from ../Src/main.c:41:
+/home/n0ragam1/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux32_1.13.1.201703061523/tools/compiler/arm-none-eabi/include/string.h:32:6: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+../Src/main.c:170:23: warning: pointer targets in passing argument 2 of 'strcmp' differ in signedness [-Wpointer-sign]
+      if (strcmp(left, command) == 0 )
+                       ^
+In file included from /home/n0ragam1/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux32_1.13.1.201703061523/tools/compiler/arm-none-eabi/include/stdio.h:29:0,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:48,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:45,
+                 from /home/n0ragam1/workspace/G8-Display/Inc/stm32f4xx_hal_conf.h:244,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:46,
+                 from ../Src/main.c:41:
+/home/n0ragam1/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux32_1.13.1.201703061523/tools/compiler/arm-none-eabi/include/string.h:32:6: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+../Src/main.c:172:17: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness [-Wpointer-sign]
+      if (strcmp(right, command) == 0 )
+                 ^
+In file included from /home/n0ragam1/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux32_1.13.1.201703061523/tools/compiler/arm-none-eabi/include/stdio.h:29:0,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:48,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:45,
+                 from /home/n0ragam1/workspace/G8-Display/Inc/stm32f4xx_hal_conf.h:244,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:46,
+                 from ../Src/main.c:41:
+/home/n0ragam1/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux32_1.13.1.201703061523/tools/compiler/arm-none-eabi/include/string.h:32:6: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+../Src/main.c:172:24: warning: pointer targets in passing argument 2 of 'strcmp' differ in signedness [-Wpointer-sign]
+      if (strcmp(right, command) == 0 )
+                        ^
+In file included from /home/n0ragam1/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux32_1.13.1.201703061523/tools/compiler/arm-none-eabi/include/stdio.h:29:0,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:48,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:45,
+                 from /home/n0ragam1/workspace/G8-Display/Inc/stm32f4xx_hal_conf.h:244,
+                 from /home/n0ragam1/workspace/G8-Display/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:46,
+                 from ../Src/main.c:41:
+/home/n0ragam1/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux32_1.13.1.201703061523/tools/compiler/arm-none-eabi/include/string.h:32:6: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+../Src/main.c:130:11: warning: unused variable 'counterRST' [-Wunused-variable]
+   uint8_t counterRST = 0;
+           ^
+../Src/main.c:128:11: warning: unused variable 'restart' [-Wunused-variable]
+   uint8_t restart[5] = {0};
+           ^
+../Src/main.c: In function 'IsExit':
+../Src/main.c:263:11: warning: unused variable 'height' [-Wunused-variable]
+  uint16_t height = 10;
+           ^
+../Src/main.c: In function 'MoveRectClick':
+../Src/main.c:356:17: warning: variable 'btn4' set but not used [-Wunused-but-set-variable]
+   GPIO_PinState btn4 = GPIO_PIN_RESET;
+                 ^
+Finished building: ../Src/main.c
+ 
+Building target: G8-Display.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F446RETx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "G8-Display.elf" @"objects.list"  
+Finished building target: G8-Display.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "G8-Display.elf" "G8-Display.bin"
+arm-none-eabi-size "G8-Display.elf"
+   text	   data	    bss	    dec	    hex	filename
+  22804	    128	   2120	  25052	   61dc	G8-Display.elf
+ 

@@ -1,0 +1,6 @@
+13:46:13 **** Incremental Build of configuration Debug for project blinkled ****
+make all 
+make: Nothing to be done for 'all'.
+
+13:46:14 Build Finished (took 570ms)
+
