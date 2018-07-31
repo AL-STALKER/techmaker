@@ -122,6 +122,9 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+	  MoveRectClick(&boardX, &boardY);
+
+	  /*
 	  command[0] = '\0';
 
 	  if (HAL_UART_Receive_DMA(&huart4, command, 3) == HAL_OK)
@@ -142,6 +145,7 @@ int main(void)
 			  }
 		  }
 	  }
+	  */
   /* USER CODE END WHILE */
 
   /* USER CODE BEGIN 3 */

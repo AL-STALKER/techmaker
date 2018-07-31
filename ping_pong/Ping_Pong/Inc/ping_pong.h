@@ -10,27 +10,25 @@
 
 #include "inttypes.h"
 
+#define maxHeight 240
 #define maxWidth 320
+#define minHeight 0
+#define minWidth 0
+#define move 15
+#define width 40
 #define height 10
 
-const uint16_t maxHeight = 240;
-/*const uint16_t maxWidth = 320;*/
-const uint16_t minHeight = 0;
-const uint16_t minWidth = 0;
-const uint16_t move = 15;
-
-int16_t moveX = 10;
-int16_t moveY = 10;
-uint16_t width = 40;
-//uint16_t height = 10;
-uint16_t boardX = 100;
-uint16_t boardY = maxWidth - height;
-int16_t ballX = 118;
-int16_t ballY = 158;
-uint16_t radius = 2;
+extern int16_t moveX;
+extern int16_t moveY;
+extern uint16_t boardX;
+extern uint16_t boardY;
+extern int16_t ballX;
+extern int16_t ballY;
+extern uint16_t radius;
 
 void MoveBall(int16_t* ptr_ballX, int16_t* ptr_ballY, int16_t* ptr_moveX, int16_t* ptr_moveY);
 void MoveRect(uint16_t* ptr_startX, uint16_t* ptr_startY, int16_t val_move);
+void MoveRectClick(uint16_t* ptr_startX, uint16_t* ptr_startY);
 void LooseGame(void);
 uint8_t IsExit(int16_t* ptr_ballX, int16_t* ptr_ballY, int16_t* ptr_moveX, int16_t* ptr_moveY);
 
